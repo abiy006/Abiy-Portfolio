@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --h1-color: #172b4d;
+  --h2-color: #6070ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --html-color: #602;
+  --body-color: #760;
+  --color1-color: greenyellow;
+  --color2-color: #0ff;
+  --p-color: #344563;
+  --bg-color: #e5e5e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--html-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white-color);
+  width: 100%;
+  min-width: 375px;
+  height: 3rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  width: 100%;
+  height: fit-content;
+}
+
+.mobile-landing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 375px;
+  height: calc(100vh + 4rem);
+  background-color: var(--white-color);
+  background-image: url("../Images/my_background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 80px;
+}
+
+h1 {
+  width: 80%;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 1rem;
+  color: var(--h1-color);
+}
+
+.wrapper {
+  max-width: 12ch;
+  white-space: nowrap;
+}
+
+p {
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  margin-left: 2rem;
+  width: 85%;
+  max-width: 40ch;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--p-color);
+}
+
+.lets-connect {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  min-width: 117px;
+  max-height: 24px;
+  color: #7f8cff;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lets-connect-icons {
+  width: 11rem;
+  color: #7f8cff;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lets-connect-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 170px;
+  list-style: none;
+}
