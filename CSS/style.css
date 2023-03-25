@@ -393,6 +393,18 @@ section.ams p {
   text-decoration: none;
 }
 
+.about-lang-menu a h3 {
+  display: flex;
+  align-items: center;
+  color: #253858;
+  width: 80%;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .lang-btn ul li a {
   display: flex;
   text-decoration: none;
@@ -420,6 +432,7 @@ section.ams p {
   background-color: #f7f7f9;
   border: 1px solid #f7f7f9;
   border-radius: 8px;
+  padding-left: 1rem;
 }
 
 .About-languages ul {
