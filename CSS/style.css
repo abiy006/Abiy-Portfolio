@@ -125,7 +125,7 @@ h1 {
   list-style: none;
 }
 
-main {
+.card-section {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -354,6 +354,7 @@ section.ams {
   margin-top: 20px;
   padding-left: 20px;
   padding-top: 100px;
+  margin-left: 16px;
 }
 
 section.ams h2 {
