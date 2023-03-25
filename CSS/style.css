@@ -356,7 +356,7 @@ section.ams {
   padding-top: 100px;
 }
 
-section.ams h1 {
+section.ams h2 {
   display: flex;
   font-size: 40px;
   font-weight: bold;
@@ -392,6 +392,16 @@ section.ams p {
   margin-top: 10px;
 }
 
+.letconnect_text a {
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+}
+
 .letconnect_icons {
   display: flex;
   flex-direction: row;
@@ -407,4 +417,87 @@ section.ams p {
   align-items: center;
   min-width: 170px;
   list-style: none;
+}
+
+.about-lang-menu {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5rem;
+  width: 327px;
+  height: 72px;
+  margin-bottom: 1rem;
+}
+
+.about-lang-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.about-lang-menu button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 48px;
+  width: 327px;
+  height: 72px;
+  padding-right: 3rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-bottom: 1.5px solid #dfe1e6;
+}
+
+.About-languages > ul > li:nth-child(1) > a > button {
+  border-bottom: none;
+}
+
+.About-languages ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 0.5rem
+}
+
+.About-languages ul ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-languages ul ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.About-languages ul ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.About-languages ul ul li button {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  height: 66.72px;
+  gap: 10px;
+  background-color: #f7f7f9;
+  border: 1px solid #f7f7f9;
+  border-radius: 8px;
+}
+
+.About-languages ul ul li button h3 {
+  display: flex;
+  align-items: center;
+  color: #253858;
+  width: 80%;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
