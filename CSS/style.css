@@ -251,11 +251,6 @@ section.card-4 p {
   text-decoration: none;
 }
 
-.lang-btn ul li a {
-  display: flex;
-  text-decoration: none;
-}
-
 .lang-btn button {
   display: flex;
   width: fit-content;
@@ -302,43 +297,6 @@ section.card-4 p {
   margin-bottom: 20px;
   align-items: center;
   align-self: start;
-}
-
-.card-1-btn > button:hover,
-.ams > button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
-.card-1-btn > button:active,
-.ams > button:active {
-  background-color: blue;
-  color: #fff;
-}
-
-.card-1-btn > button:disabled,
-.ams > button:disabled {
-  color: #aaa;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-}
-
-.lang-btn button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
-.lang-btn button:active {
-  background-color: blue;
-  color: #fff;
-}
-
-.lang-btn button:disabled {
-  color: #aaa;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 8px;
 }
 
 section.ams {
@@ -435,6 +393,11 @@ section.ams p {
   text-decoration: none;
 }
 
+.lang-btn ul li a {
+  display: flex;
+  text-decoration: none;
+}
+
 .about-lang-menu button {
   display: flex;
   justify-content: space-between;
@@ -448,8 +411,15 @@ section.ams p {
   border-bottom: 1.5px solid #dfe1e6;
 }
 
-.About-languages > ul > li:nth-child(1) > a > button {
-  border-bottom: none;
+.About-languages ul ul li button {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  height: 66.72px;
+  gap: 10px;
+  background-color: #f7f7f9;
+  border: 1px solid #f7f7f9;
+  border-radius: 8px;
 }
 
 .About-languages ul {
@@ -457,7 +427,7 @@ section.ams p {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  margin-left: 0.5rem
+  margin-left: 0.5rem;
 }
 
 .About-languages ul ul {
@@ -480,17 +450,6 @@ section.ams p {
   text-decoration: none;
 }
 
-.About-languages ul ul li button {
-  display: flex;
-  align-items: center;
-  width: 303px;
-  height: 66.72px;
-  gap: 10px;
-  background-color: #f7f7f9;
-  border: 1px solid #f7f7f9;
-  border-radius: 8px;
-}
-
 .About-languages ul ul li button h3 {
   display: flex;
   align-items: center;
@@ -501,4 +460,45 @@ section.ams p {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+}
+
+.card-1-btn > button:active,
+.ams > button:active {
+  background-color: blue;
+  color: #fff;
+}
+
+.card-1-btn > button:disabled,
+.ams > button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.lang-btn button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.lang-btn button:active {
+  background-color: blue;
+  color: #fff;
+}
+
+.lang-btn button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.card-1-btn > button:hover,
+.ams > button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.About-languages > ul > li:nth-child(1) > a > button {
+  border-bottom: none;
 }
