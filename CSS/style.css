@@ -618,3 +618,14 @@ textarea::placeholder {
   font-size: 15px;
   line-height: 24px;
 }
+
+section.contact_me_mobile > hr {
+  border: 2px solid #0d151e;
+  background-color: #0d151e;
+  width: 40%;
+  height: 5px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 1rem;
+  margin-left: 30%;
+} 
