@@ -75,6 +75,10 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
 - Twitter: [@twitterhandle](https://twitter.com/Abiy62463489)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abiy-hussen-aman-194587183/)
 
+👤 **José Alejandro Fernández Caminero**
+
+- GitHub: [@githubhandle](https://github.com/fdezcaminero/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
@@ -102,9 +106,15 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
 
 To get a local copy up and running, follow these steps.
 
+* To clone the repository
+* Double click the index.html file and open in your favourite browser
+
 ### Prerequisites
 
 In order to run this project you need:
+
+* To clone the repository
+* A browser
 
 ### Setup
 

@@ -21,9 +21,11 @@
 
 html {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: fit-content;
+  height: auto;
+  background-color: #f7f7f9;
 }
 
 header {
@@ -46,7 +48,8 @@ header ul {
 body {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-color);
+  justify-content: center;
+  background-color: #f7f7f9;
   width: 100%;
   height: fit-content;
 }
@@ -62,6 +65,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-left-radius: 80px;
+  overflow-x: auto;
 }
 
 h1 {
@@ -277,7 +281,8 @@ section.card-4 p {
 }
 
 .card-1-btn > button,
-.ams > button {
+.ams > button,
+.contact_me_mobile button {
   display: flex;
   background-color: #fff;
   color: #396df2;
@@ -309,9 +314,10 @@ section.ams {
   border: 1px solid #fff;
   border-top-right-radius: 80px;
   margin-top: 20px;
-  padding-left: 20px;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
   padding-top: 100px;
-  margin-left: 16px;
+  overflow-x: auto;
 }
 
 section.ams h2 {
@@ -474,14 +480,23 @@ section.ams p {
   line-height: 20px;
 }
 
+.card-1-btn > button:hover,
+.ams > button:hover,
+.contact_me_mobile button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
 .card-1-btn > button:active,
-.ams > button:active {
-  background-color: blue;
+.ams > button:active,
+.contact_me_mobile button:active {
+  background-color: #2230d2;
   color: #fff;
 }
 
 .card-1-btn > button:disabled,
-.ams > button:disabled {
+.ams > button:disabled,
+.contact_me_mobile button:disabled {
   color: #aaa;
   background-color: #fff;
   border: 1px solid #aaa;
@@ -505,12 +520,114 @@ section.ams p {
   border-radius: 8px;
 }
 
-.card-1-btn > button:hover,
-.ams > button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
 .About-languages > ul > li:nth-child(1) > a > button {
   border-bottom: none;
+}
+
+.contact_me_mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 375px;
+  height: 810px;
+  background-color: #6070ff;
+  background-image: url("../Images/contact_me_bgd.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  border-top-left-radius: 80px;
+  margin-bottom: 10rem;
+  overflow-x: auto;
+}
+
+section.contact_me_mobile > h2 {
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 8.5rem;
+  margin-left: 4rem;
+}
+
+section.contact_me_mobile > p {
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  width: 327px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.contact_me_mobile form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 327px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+section.contact_me_mobile > form > input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+section.contact_me_mobile > form > input::placeholder {
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  color: #172b4d;
+  width: 273px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 8px;
+  width: 327px;
+  height: 11.5rem;
+}
+
+textarea::placeholder {
+  display: flex;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  color: #b3bac5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+section.contact_me_mobile > hr {
+  border: 2px solid #0d151e;
+  background-color: #0d151e;
+  width: 40%;
+  height: 5px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 1rem;
+  margin-left: 30%;
 }
