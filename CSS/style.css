@@ -65,7 +65,7 @@ header {
   flex-direction: column;
   width: 100%;
   min-width: 375px;
-  height: calc(100vh + 4rem);
+  height: calc(100vh + 6rem);
   background-color: var(--white-color);
   background-image: url("../Images/my_background.svg");
   background-repeat: no-repeat;
@@ -312,6 +312,7 @@ section.card-4 p {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  width: 300px;
 }
 
 .see-project-btn > button,
