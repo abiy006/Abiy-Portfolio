@@ -223,16 +223,16 @@ h2 {
   height: 2rem;
 }
 
-.desktop-section p {
+.desktop-landing-content p {
   width: 60%;
   font-family: 'Poppins', system-ui, Courier, monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 28px;
   color: #344563;
   text-align: left;
-  margin-left: 10rem;
+  margin-left: 12rem;
   margin-bottom: 1rem;
 }
 
@@ -720,8 +720,8 @@ section.contact_me_mobile > hr {
   align-items: center;
   width: 100%;
   list-style: none;
-  padding-left: 8rem;
-  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-right: 8rem;
 }
 
 .desktop-section header ul {
@@ -734,61 +734,81 @@ section.contact_me_mobile > hr {
 }
 
 .desktop-section header ul li a {
+  display: flex;
   text-decoration: none;
+  color:#344563;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+    ;
 }
 
 .desktop-landing {
-  background-image: url("../Images/landing_desktop.svg");
-  overflow-x: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  display: grid;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: white;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  overflow-x: auto;
   border-bottom-left-radius: 100px;
-  margin-bottom: 5rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.desktop-section h1 {
-  width: 60%;
+.desktop-landing-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 721.46px;
+  background-image: url("../Images/landing_desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.desktop-landing-content h1 {
+  width: 40%;
   margin-top: 10rem;
-  margin-left: 10rem;
+  margin-left: 12rem;
   align-items: center;
   letter-spacing: 0.37px;
   font-family: 'Poppins', system-ui, Courier, monospace;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 60px;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
-.desktop-section .wrapper {
+.desktop-landing-content .wrapper {
   max-width: 15ch;
   white-space: nowrap;
 }
 
-.desktop-landing .lets-con-desk-txt {
+.desktop-landing-content .lets-con-desk-txt {
   font-size: 16px;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   min-width: 117px;
   max-height: 24px;
   color: #7f8cff;
   text-align: left;
-  margin-left: 10rem;
+  margin-left: 12rem;
   margin-bottom: 0.5rem;
 }
 
-.desktop-landing .lets-con-desk-icon {
+.desktop-landing-content .lets-con-desk-icon {
   width: 11rem;
   color: #7f8cff;
   text-align: left;
-  margin-left: 10rem;
+  margin-left: 12rem;
 }
 
-.desktop-landing .lets-con-desk-icon ul {
+.desktop-landing-content .lets-con-desk-icon ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -805,18 +825,17 @@ section.contact_me_mobile > hr {
 }
 
 .desktop-card {
-  display: grid;
+  display: flex;
   border-radius: 24px;
   justify-self: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
   border: 1px solid #dfe1e6;
   background-color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 90%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   height: 496px;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .desk_main_content {
@@ -875,7 +894,7 @@ section.contact_me_mobile > hr {
   background-image: url('../Images/deskcard1.svg');
   background-repeat: no-repeat;
   margin-top: 10px;
-  width: 100%;
+  width: 544px;
   height: 448px;
   border-radius: 8px;
   margin-right: 10px;
@@ -886,29 +905,29 @@ section.contact_me_mobile > hr {
   background-image: url('../Images/deskcard1.svg');
   background-repeat: no-repeat;
   margin-top: 10px;
-  width: 100%;
+  width: 544px;
   height: 448px;
   border-radius: 8px;
   margin-right: 10px;
 }
 
 section.desktop_ams {
-  display: grid;
-  justify-content: center;
+  display: flex;
   width: 100%;
   border: 1px solid #dfe1e6;
   background-color: #fff;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  grid-template-columns: repeat(2, 1fr 1fr);
+  padding-left: 5rem;
   border-top-right-radius: 150px;
 }
 
 section.desktop_ams .about_part1 {
-  margin-left: 7rem;
-  margin-right: 80px;
+  width: 40%;
+}
+
+section.desktop_ams .about_part2{
+  width: 60%;
 }
 
 section.desktop_ams .about_part1 h2 {
