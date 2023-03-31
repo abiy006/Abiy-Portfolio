@@ -60,14 +60,6 @@ header {
   height: 3rem;
 }
 
-.mobile-section header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  list-style: none;
-}
-
 .mobile-landing {
   display: flex;
   flex-direction: column;
@@ -231,6 +223,35 @@ h2 {
   height: 2rem;
 }
 
+.desktop-section p {
+  width: 60%;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  color: #344563;
+  text-align: left;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
+
+.desktop_contact_content > p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: #fff;
+  width: 38%;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  text-align: center;
+  margin-left: 5rem;
+  margin-bottom: 1px;
+}
+
 section.card-1 p,
 section.card-2 p,
 section.card-3 p,
@@ -290,7 +311,6 @@ section.card-4 p {
 .see-project-btn {
   display: flex;
   align-items: center;
-  /* width: 295px; */
   margin-top: 1rem;
 }
 
@@ -332,6 +352,21 @@ section.ams {
   padding-left: 1rem;
   padding-top: 100px;
   overflow-x: auto;
+}
+
+.contact_me_desktop h2 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 56px;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 10rem;
+  margin-left: 3rem;
 }
 
 section.ams h2 {
@@ -494,6 +529,14 @@ section.ams p {
   line-height: 20px;
 }
 
+.mobile-section header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  list-style: none;
+}
+
 .see-project-btn button:hover,
 .ams > button:hover,
 .contact_me_mobile button:hover {
@@ -578,6 +621,16 @@ section.contact_me_mobile > p {
   margin-bottom: 1rem;
 }
 
+.contact_me_desktop form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+  width: 40%;
+  height: 45%;
+  align-self: center;
+}
+
 section.contact_me_mobile form {
   display: flex;
   flex-direction: column;
@@ -585,6 +638,21 @@ section.contact_me_mobile form {
   width: 327px;
   height: auto;
   margin-top: 1rem;
+}
+
+.contact_me_desktop form input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  cursor: pointer;
+  width: 447px;
+  height: 48px;
+  margin-top: 1rem;
+  padding-left: 10px;
+  font-family: 'Poppins', system-ui, Courier, monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 section.contact_me_mobile > form > input {
@@ -702,19 +770,6 @@ section.contact_me_mobile > hr {
   white-space: nowrap;
 }
 
-.desktop-section p {
-  width: 60%;
-  font-family: 'Poppins', system-ui, Courier, monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 28px;
-  color: #344563;
-  text-align: left;
-  margin-left: 10rem;
-  margin-bottom: 1rem;
-}
-
 .desktop-landing .lets-con-desk-txt {
   font-size: 16px;
   font-family: 'Poppins', sans-serif, Courier, monospace;
@@ -790,7 +845,7 @@ section.contact_me_mobile > hr {
   color: #344563;
   text-align: left;
   margin-top: 2rem;
-  margin-left: 0px;
+  margin-left: 1px;
 }
 
 .desk_main_img1 {
@@ -877,7 +932,7 @@ section.desktop_ams .about_part1 p {
   font-family: 'Poppins', system-ui, Courier, monospace;
   width: 447px;
   height: 114px;
-  margin-left: 0px;
+  margin-left: 1px;
   color: #344563;
   text-align: left;
   margin-top: 10px;
@@ -913,6 +968,8 @@ section.desktop_ams .about_part2 ul li ul li {
 }
 
 .desktop_contact_content {
+  display: flex;
+  flex-direction: column;
   background-image: url("../Images/contact_desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -920,69 +977,6 @@ section.desktop_ams .about_part2 ul li ul li {
   border-bottom-left-radius: 80px;
   margin-left: 3rem;
   margin-right: 3rem;
-}
-
-.desktop_contact_content {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact_me_desktop h2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  color: #fff;
-  width: 100%;
-  height: 56px;
-  font-family: 'Poppins', sans-serif, Courier, monospace;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  margin-top: 10rem;
-  margin-left: 3rem;
-}
-
-.desktop_contact_content > p {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  color: #fff;
-  width: 38%;
-  font-family: 'Poppins', sans-serif, Courier, monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 28px;
-  text-align: center;
-  margin-left: 5rem;
-  margin-bottom: 0rem;
-}
-
-.contact_me_desktop form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5rem;
-  width: 40%;
-  height: 45%;
-  align-self: center;
-
-}
-
-.contact_me_desktop form input {
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  cursor: pointer;
-  width: 447px;
-  height: 48px;
-  margin-top: 1rem;
-  padding-left: 10px;
-  font-family: 'Poppins', system-ui, Courier, monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
 }
 
 .contact_me_desktop form textarea {
