@@ -287,25 +287,6 @@ section.card-4 p {
   text-decoration: none;
 }
 
-.lang-btn button {
-  display: flex;
-  width: fit-content;
-  height: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #ebebff;
-  color: #6070ff;
-  justify-content: center;
-  border: 1px solid #ebebff;
-  border-radius: 8px;
-  align-items: center;
-  font-family: 'Poppins', sans-serif, Courier, monospace;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .see-project-btn {
   display: flex;
   align-items: center;
@@ -447,31 +428,6 @@ section.ams p {
   text-decoration: none;
 }
 
-.about-lang-menu button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 48px;
-  width: 327px;
-  height: 72px;
-  padding-right: 3rem;
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-bottom: 1.5px solid #dfe1e6;
-}
-
-.About-languages ul ul li button {
-  display: flex;
-  align-items: center;
-  width: 303px;
-  height: 66.72px;
-  gap: 10px;
-  background-color: #f7f7f9;
-  border: 1px solid #f7f7f9;
-  border-radius: 8px;
-  padding-left: 1rem;
-}
-
 .About-languages ul {
   display: flex;
   flex-direction: column;
@@ -518,27 +474,6 @@ section.ams p {
   align-items: center;
   width: 80%;
   list-style: none;
-}
-
-.lang-btn button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
-.lang-btn button:active {
-  background-color: blue;
-  color: #fff;
-}
-
-.lang-btn button:disabled {
-  color: #aaa;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-}
-
-.About-languages > ul > li:nth-child(1) > a > button {
-  border-bottom: none;
 }
 
 .contact_me_mobile {
@@ -914,6 +849,14 @@ section.desktop_ams .about_part2 ul li ul {
   list-style: none;
 }
 
+.letconnect_icons ul li:hover {
+  transform: scale(1.1);
+}
+
+.centered4 ul li:hover {
+  transform: scale(1.1);
+}
+
 section.desktop_ams .about_part2 ul li ul li {
   display: flex;
   list-style: none;
@@ -960,8 +903,39 @@ section.desktop_ams .about_part2 ul li ul li {
   justify-content: center;
 }
 
+.lang-btn button {
+  display: flex;
+  width: fit-content;
+  height: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #ebebff;
+  color: #6070ff;
+  justify-content: center;
+  border: 1px solid #ebebff;
+  border-radius: 8px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.about-lang-menu button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 48px;
+  width: 327px;
+  height: 72px;
+  padding-right: 3rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-bottom: 1.5px solid #dfe1e6;
+}
+
 .see-project-btn > button,
-.ams > .mobile-about-myself > button,
 .contact_me_mobile button {
   display: flex;
   background-color: #fff;
@@ -983,22 +957,52 @@ section.desktop_ams .about_part2 ul li ul li {
   align-self: start;
 }
 
+.About-languages ul ul li button {
+  display: flex;
+  align-items: center;
+  width: 303px;
+  height: 66.72px;
+  gap: 10px;
+  background-color: #f7f7f9;
+  border: 1px solid #f7f7f9;
+  border-radius: 8px;
+  padding-left: 1rem;
+}
+
+.ams > .mobile-about-myself > button {
+  display: flex;
+  background-color: #fff;
+  color: #396df2;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: fit-content;
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  align-self: start;
+}
+
 .see-project-btn button:hover,
-.ams > .mobile-about-myself > button:hover,
 .contact_me_mobile button:hover {
   background-color: #6070ff;
   color: #fff;
 }
 
 .see-project-btn button:active,
-.ams > .mobile-about-myself > button:active,
 .contact_me_mobile button:active {
   background-color: #2230d2;
   color: #fff;
 }
 
 .see-project-btn button:disabled,
-.ams > .mobile-about-myself > button:disabled,
 .contact_me_mobile button:disabled {
   color: #aaa;
   background-color: #fff;
@@ -1006,10 +1010,40 @@ section.desktop_ams .about_part2 ul li ul li {
   border-radius: 8px;
 }
 
-.letconnect_icons ul li:hover {
-  transform: scale(1.1);
+.lang-btn button:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
-.centered4 ul li:hover {
-  transform: scale(1.1);
+.lang-btn button:active {
+  background-color: blue;
+  color: #fff;
+}
+
+.lang-btn button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.About-languages > ul > li:nth-child(1) > a > button {
+  border-bottom: none;
+}
+
+.ams > .mobile-about-myself > button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.ams > .mobile-about-myself > button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.ams > .mobile-about-myself > button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
 }
