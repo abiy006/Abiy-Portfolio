@@ -239,7 +239,7 @@ h2 {
   justify-content: center;
   align-self: center;
   color: #fff;
-  width: 38%;
+  width: 40%;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   font-style: normal;
   font-weight: 400;
@@ -313,29 +313,6 @@ section.card-4 p {
   width: 300px;
 }
 
-.see-project-btn > button,
-.ams > button,
-.contact_me_mobile button {
-  display: flex;
-  background-color: #fff;
-  color: #396df2;
-  font-size: 17px;
-  font-family: 'Poppins', sans-serif, Courier, monospace;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  width: fit-content;
-  height: 48px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-items: center;
-  align-self: start;
-}
-
 section.ams {
   display: flex;
   flex-direction: column;
@@ -351,6 +328,14 @@ section.ams {
   padding-left: 1rem;
   padding-top: 100px;
   overflow-x: auto;
+}
+
+.mobile-about-myself {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-left: 10%;
 }
 
 .contact_me_desktop h2 {
@@ -374,7 +359,6 @@ section.ams h2 {
   font-weight: bold;
   align-items: center;
   font-family: 'Poppins', system-ui, Courier, monospace;
-  width: 250px;
   height: 101px;
   color: #172b4d;
   text-align: left;
@@ -536,29 +520,6 @@ section.ams p {
   list-style: none;
 }
 
-.see-project-btn button:hover,
-.ams > button:hover,
-.contact_me_mobile button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
-.see-project-btn button:active,
-.ams > button:active,
-.contact_me_mobile button:active {
-  background-color: #2230d2;
-  color: #fff;
-}
-
-.see-project-btn button:disabled,
-.ams > button:disabled,
-.contact_me_mobile button:disabled {
-  color: #aaa;
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-}
-
 .lang-btn button:hover {
   background-color: #6070ff;
   color: #fff;
@@ -626,7 +587,7 @@ section.contact_me_mobile > p {
   align-items: center;
   margin-left: 5rem;
   width: 40%;
-  height: 45%;
+  height: 50%;
   align-self: center;
 }
 
@@ -966,11 +927,8 @@ section.desktop_ams .about_part2 ul li ul li {
   width: 100%;
   border: 1px solid #dfe1e6;
   background-color: #6070ff;
-  margin-bottom: 3rem;
-  height: 730px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
   border-top-left-radius: 150px;
+  margin-bottom: 2rem;
 }
 
 .desktop_contact_content {
@@ -1000,4 +958,50 @@ section.desktop_ams .about_part2 ul li ul li {
 .desktop_contact_content form .see-project-btn {
   display: flex;
   justify-content: center;
+}
+
+.see-project-btn > button,
+.ams > .mobile-about-myself > button,
+.contact_me_mobile button {
+  display: flex;
+  background-color: #fff;
+  color: #396df2;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: fit-content;
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  align-self: start;
+}
+
+.see-project-btn button:hover,
+.ams > .mobile-about-myself > button:hover,
+.contact_me_mobile button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.see-project-btn button:active,
+.ams > .mobile-about-myself > button:active,
+.contact_me_mobile button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.see-project-btn button:disabled,
+.ams > .mobile-about-myself > button:disabled,
+.contact_me_mobile button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
 }
