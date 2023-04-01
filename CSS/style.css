@@ -1005,3 +1005,11 @@ section.desktop_ams .about_part2 ul li ul li {
   border: 1px solid #aaa;
   border-radius: 8px;
 }
+
+.letconnect_icons ul li:hover {
+  transform: scale(1.1);
+}
+
+.centered4 ul li:hover {
+  transform: scale(1.1);
+}
