@@ -132,8 +132,15 @@ Clone this repository to your desired folder:
 - [ ] **[linter_implementation_with_javascript]**
 - [ ] **[linter_implementation_with_html_css_javascript]**
 - [ ] **[linter_implementation_with_ruby]**
+- GitHub: [@githubhandle](https://github.com/fdezcaminero/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Walkthrough
+
+Brife description of this portofolio walkthrough until at this point 
+
+- Walkthrough: [Project Walkthrough](https://www.loom.com/share/fb12380aa2964c4f9641a18f9aea6c19)
 
 <!-- CONTRIBUTING -->
 
