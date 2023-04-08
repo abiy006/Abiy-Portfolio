@@ -38,7 +38,7 @@ html {
   width: 100%;
   height: auto;
   background-color: #f7f7f9;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -108,6 +108,7 @@ header {
 
 .lets-connect {
   font-size: 16px;
+  font-weight: 400;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   min-width: 117px;
   max-height: 24px;
@@ -206,7 +207,6 @@ h2 {
   font-family: 'Poppins', system-ui, Courier, monospace;
   margin-top: 20px;
   width: 295px;
-  height: 3rem;
   color: #172b4d;
   text-align: left;
   font-style: normal;
@@ -308,7 +308,7 @@ section.ams {
   margin-bottom: 5rem;
   padding-left: 1rem;
   padding-top: 100px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .mobile-about-myself {
@@ -324,7 +324,6 @@ section.ams {
   justify-content: center;
   color: #fff;
   width: 100%;
-  height: 56px;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   font-style: normal;
   font-weight: 700;
@@ -367,6 +366,7 @@ section.ams p {
   color: #7f8cff;
   text-align: left;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .letconnect_text a {
@@ -682,9 +682,10 @@ section.contact_me_mobile > hr {
 
 .desktop-landing-content .lets-con-desk-txt {
   font-size: 16px;
+  font-weight: 400;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   min-width: 117px;
-  max-height: 24px;
+  max-height: 2rem;
   color: #7f8cff;
   text-align: left;
   margin-bottom: 0.5rem;
@@ -731,6 +732,7 @@ section.contact_me_mobile > hr {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .desk_main_content h1 {
@@ -748,7 +750,6 @@ section.contact_me_mobile > hr {
   font-size: 16px;
   font-style: normal;
   font-family: 'Poppins', sans-serif, Courier, monospace;
-  height: 50px;
   color: #344563;
   text-align: left;
   margin-top: 2rem;
@@ -823,6 +824,7 @@ section.desktop_ams .about_part1 h2 {
   color: #091e42;
   text-align: left;
   margin-top: 10px;
+  height: auto;
 }
 
 section.desktop_ams .about_part1 p {
@@ -832,7 +834,6 @@ section.desktop_ams .about_part1 p {
   font-size: 16px;
   line-height: 24px;
   font-family: 'Poppins', system-ui, Courier, monospace;
-  height: 114px;
   margin-left: 1px;
   color: #344563;
   text-align: left;
