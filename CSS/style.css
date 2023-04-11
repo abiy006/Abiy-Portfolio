@@ -47,7 +47,7 @@ body {
   justify-content: center;
   background-color: #f7f7f9;
   width: 100%;
-  height: fit-content;
+  height: auto;
   overflow-x: auto;
 }
 
