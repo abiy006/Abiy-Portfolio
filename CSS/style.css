@@ -1046,3 +1046,44 @@ section.desktop_ams .about_part2 ul li ul li {
   border: 1px solid #aaa;
   border-radius: 8px;
 }
+
+.blur {
+  filter: blur(8px);
+}
+
+.mobile-menu-page-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.mobile-menu-close-class {
+  width: 7%;
+  margin-top: 3rem;
+  margin-left: 80%;
+  color: #fff;
+}
+
+.mobile-menu-page-class ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+}
+
+.mobile-menu-page-class ul li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.mobile-menu-page-class ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
