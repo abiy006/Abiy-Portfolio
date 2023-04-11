@@ -10,16 +10,16 @@
 
 <body>
    <section class="mobile-section">
-    <header>
+    <header id="header">
         <ul>
             <li><a href="#"><img src="Images\MyLogo.svg" alt="My Logo" width="76px" height="20px"></a></li>
             <li>
-               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px"></nav>
+               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px" id="mobileMenuid"></nav>
             </li>
          </ul>
     </header>
-      <section class="mobile-landing">
-         <h1> <span class="wrapper">I'm Mariane</span> <span class="wrapper">Glad to see</span> <span class="wrapper">you!</span></h1>
+      <section id="mobile-landing-id" class="mobile-landing">
+         <h1> <span class="wrapper">I'm Abiy</span> <span class="wrapper">Glad to see</span> <span class="wrapper">you!</span></h1>
          <p>
                I'm a software developer! I can help you
                build a product , feature or website Look
@@ -97,7 +97,7 @@
                <div class="see-project-btn"><button>See Project</button></div>
          </section>
       </section>
-      <section class="ams">
+      <section id="ams" class="ams">
       <div class="mobile-about-myself">
          <h2>About Myself</h2>
          <p>
@@ -130,7 +130,7 @@
          </div>
       </div>
       </section>
-      <section class="contact_me_mobile">
+      <section id="contact_me_mobile" class="contact_me_mobile">
          <h2>Contact me</h2>
          <p>If you have an application you are intersted in developing, a feature that you need built or a project that
             needs coding. I'd love to help with it</p>
@@ -292,5 +292,30 @@
          </div>
       </section>
    </section>
+   <nav id="mobile-menu-page-id" class="mobile-menu-page-class">
+      <div id="mobile-menu-close-id" class="mobile-menu-close-class" onclick="mobileMenuclose()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+      </div>
+      <ul>
+          <li>
+              <a href="/" class='link' onclick="mobileMenuclose()">
+                  Portfolio
+              </a>
+          </li>
+          <li>
+              <a href="#ams" class='link' onclick="mobileMenuclose()">
+                  About
+              </a>
+          </li>
+          <li>
+              <a href="#contact_me_mobile" class='link' onclick="mobileMenuclose()">
+                  Contact
+              </a>
+          </li>
+      </ul>
+  </nav>
+   <script src="JS/index.js"></script>
 </body>
 </html>
