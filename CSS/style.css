@@ -428,6 +428,18 @@ section.ams p {
   text-decoration: none;
 }
 
+.mobile-menu-page-class ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+}
+
+.mobile-menu-page-class ul li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
 .About-languages ul {
   display: flex;
   flex-direction: column;
@@ -448,6 +460,16 @@ section.ams p {
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+.mobile-menu-page-class ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif, Courier, monospace;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 .About-languages ul ul li a {
@@ -1064,26 +1086,4 @@ section.desktop_ams .about_part2 ul li ul li {
   margin-top: 3rem;
   margin-left: 80%;
   color: #fff;
-}
-
-.mobile-menu-page-class ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  align-items: start;
-}
-
-.mobile-menu-page-class ul li {
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-.mobile-menu-page-class ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif, Courier, monospace;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 3rem;
 }

@@ -14,7 +14,7 @@
         <ul>
             <li><a href="#"><img src="Images\MyLogo.svg" alt="My Logo" width="76px" height="20px"></a></li>
             <li>
-               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px" onclick="open_mobile_menu()"></nav>
+               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px" id="mobileMenuid"></nav>
             </li>
          </ul>
     </header>
@@ -293,24 +293,24 @@
       </section>
    </section>
    <nav id="mobile-menu-page-id" class="mobile-menu-page-class">
-      <div id="mobile-menu-close-id" class="mobile-menu-close-class" onclick="mobile_menu_close_func()">
+      <div id="mobile-menu-close-id" class="mobile-menu-close-class" onclick="mobileMenuclose()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
       </div>
       <ul>
           <li>
-              <a href="/" class='link' onclick="mobile_menu_close_func()">
+              <a href="/" class='link' onclick="mobileMenuclose()">
                   Portfolio
               </a>
           </li>
           <li>
-              <a href="#ams" class='link' onclick="mobile_menu_close_func()">
+              <a href="#ams" class='link' onclick="mobileMenuclose()">
                   About
               </a>
           </li>
           <li>
-              <a href="#contact_me_mobile" class='link' onclick="mobile_menu_close_func()">
+              <a href="#contact_me_mobile" class='link' onclick="mobileMenuclose()">
                   Contact
               </a>
           </li>
