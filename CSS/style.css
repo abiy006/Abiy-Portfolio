@@ -1087,3 +1087,11 @@ section.desktop_ams .about_part2 ul li ul li {
   margin-left: 80%;
   color: #fff;
 }
+
+.modal-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-left: 1rem;
+}
