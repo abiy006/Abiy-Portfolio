@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Abiy Portfolio</title>
 </head>
 
 <body>
-   <section class="mobile-section">
-    <header>
+   <section id="mobile-section-id" class="mobile-section">
+    <header id="header-id">
         <ul>
             <li><a href="#"><img src="Images\MyLogo.svg" alt="My Logo" width="76px" height="20px"></a></li>
             <li>
-               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px"></nav>
+               <nav><img src="Images\menu.svg" alt="Menu Icon" width="18px" height="12px" id="mobileMenuid"></nav>
             </li>
          </ul>
     </header>
-      <section class="mobile-landing">
-         <h1> <span class="wrapper">I'm Mariane</span> <span class="wrapper">Glad to see</span> <span class="wrapper">you!</span></h1>
+      <section id="mobile-landing-id" class="mobile-landing">
+         <h1> <span class="wrapper">I'm Abiy</span> <span class="wrapper">Glad to see</span> <span class="wrapper">you!</span></h1>
          <p>
                I'm a software developer! I can help you
                build a product , feature or website Look
@@ -39,7 +39,7 @@
                </ul>
             </div>
       </section>
-      <section class="card-section">
+      <section id="card-section-id" class="card-section">
          <section class="card-1">
                <div class="card-1-bg"></div>
                <h2>Tonic</h2>
@@ -97,7 +97,7 @@
                <div class="see-project-btn"><button>See Project</button></div>
          </section>
       </section>
-      <section class="ams">
+      <section id="ams" class="ams">
       <div class="mobile-about-myself">
          <h2>About Myself</h2>
          <p>
@@ -130,7 +130,7 @@
          </div>
       </div>
       </section>
-      <section class="contact_me_mobile">
+      <section id="contact_me_mobile" class="contact_me_mobile">
          <h2>Contact me</h2>
          <p>If you have an application you are intersted in developing, a feature that you need built or a project that
             needs coding. I'd love to help with it</p>
@@ -292,5 +292,38 @@
          </div>
       </section>
    </section>
+   <nav id="mobile-menu-page-id" class="mobile-menu-page-class">
+      <div id="mobile-menu-close-id" class="mobile-menu-close-class">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+      </div>
+      <ul id="moblie-menu-list-ul">
+          <li>
+              <a href="/" class='link'>
+                  Portfolio
+              </a>
+          </li>
+          <li>
+              <a href="#ams" class='link'>
+                  About
+              </a>
+          </li>
+          <li>
+              <a href="#contact_me_mobile" class='link'>
+                  Contact
+              </a>
+          </li>
+      </ul>
+  </nav>
+  <Section id="modal-id" class="modal-class">
+      <div id="modal-close-id" class="modal-close-class">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+         </svg>
+      </div>
+  </Section>
+   <script src="index.js"></script>
+   <script src="modal.js"></script>
 </body>
 </html>
