@@ -1088,10 +1088,14 @@ section.desktop_ams .about_part2 ul li ul li {
   color: #fff;
 }
 
-.modal-class {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-left: 1rem;
+#modal-id {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 80%;
+  height: 100vh;
+}
+
+.header-dialog-close {
+  width: 7%;
+  color: greenyellow;
 }
