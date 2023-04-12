@@ -14,7 +14,6 @@ const headerId = document.getElementById('header-id');
 mobileMenu.style.display = 'none';
 
 function openMobilemenu() {
-
   cardSectionId.style.display = 'none';
   aMS.style.display = 'none';
   contactMeMobile.style.display = 'none';
@@ -23,7 +22,7 @@ function openMobilemenu() {
   mobileLanding.classList.add('blur');
   headerId.style.backgroundColor = '#6070ff';
   headerId.classList.add('blur');
-  
+
   mobileMenu.style.display = 'block';
 }
 
