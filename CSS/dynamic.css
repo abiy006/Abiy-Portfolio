@@ -15,7 +15,7 @@
     }
 
     .singleCardh1 {
-        font-size: 400%;
+        font-size: 350%;
     }
 
     .canopy-class {
@@ -24,7 +24,7 @@
     }
 
     .card-content-class {
-        font-size: 100%;
+        font-size: 150%;
         margin-top: 7%;
         margin-bottom: 3%;
     }
@@ -34,13 +34,13 @@
     }
 
     .card-lang-button {
-        font-size: 80%;
+        font-size: 100%;
     }
 
-    .card-see-button {
+    .seeProjectBtn {
         width: 27%;
-        font-size: 100%;
-        margin-top: 10%;
+        font-size: 120%;
+        margin-top: 7%;
     }
 }
 
@@ -68,7 +68,7 @@
     }
 
     .card-content-class {
-        font-size: 88%;
+        font-size: 100%;
         margin-top: 7%;
         margin-bottom: 3%;
     }
@@ -78,12 +78,12 @@
     }
 
     .card-lang-button {
-        font-size: 70%;
+        font-size: 90%;
     }
 
-    .card-see-button {
+    .seeProjectBtn {
         width: 28%;
-        font-size: 100%;
+        font-size: 110%;
         margin-top: 10%;
     }
 }
@@ -112,7 +112,7 @@
     }
 
     .card-content-class {
-        font-size: 80%;
+        font-size: 90%;
         margin-top: 7%;
         margin-bottom: 3%;
     }
@@ -122,10 +122,10 @@
     }
 
     .card-lang-button {
-        font-size: 60%;
+        font-size: 70%;
     }
 
-    .card-see-button {
+    .seeProjectBtn {
         width: 32%;
         font-size: 100%;
         margin-top: 8%;
@@ -161,7 +161,7 @@
    }
 
    .card-content-class {
-    font-size: 70%;
+    font-size: 80%;
     margin-top: 7%;
     margin-bottom: 3%;
     }
@@ -174,7 +174,7 @@
         font-size: 50%;
     }
 
-    .card-see-button {
+    .seeProjectBtn {
         width: 32%;
         font-size: 75%;
         margin-top: 10%;
@@ -194,23 +194,23 @@
 
     .canopyDivClas {
         width: 75%;
-        font-size: 120%;
+        font-size: 130%;
     }
 
 
     .singleCardh1 {
-        font-size: 150%;
+        font-size: 210%;
     }
 
     .canopy-class {
-        font-size: 60%;
-        line-height: 60%;
+        font-size: 70%;
     }
 
     .card-content-class {
-        font-size: 90%;
+        font-size: 120%;
         margin-top: 4%;
         margin-bottom: 3%;
+        width: 80%;
     }
 
     .card-lang-div {
@@ -218,13 +218,13 @@
     }
 
     .card-lang-button {
-      font-size: 70%;
+      font-size: 90%;
       text-transform: capitalize;
     }
 
-    .card-see-button {
-        width: 30%;
-        font-size: 100%;
+    .seeProjectBtn {
+        width: 35%;
+        font-size: 120%;
         margin-top: 7%;
         margin-bottom: 3%;
     }
@@ -257,6 +257,7 @@
         font-size: 90%;
         margin-top: 4%;
         margin-bottom: 3%;
+        width: 80%;
     }
 
     .card-lang-div {
@@ -268,14 +269,14 @@
       text-transform: capitalize;
     }
 
-    .card-see-button {
+    .seeProjectBtn {
         width: 30%;
         font-size: 80%;
         margin-top: 10%;
         margin-bottom: 3%;
     }
     @media (width <= 500px) {
-        .card-see-button {
+        .seeProjectBtn {
             width: 40%;
             font-size: 80%;
             margin-top: 10%;
@@ -330,4 +331,22 @@ body {
   background-color: #602;
   width: 100%;
   height: auto;
+}
+
+
+#button2 button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.seeProjectBtn button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.seeProjectBtn button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
 }

@@ -1,8 +1,8 @@
+const cardButtons = document.getElementById('divSeeProjectId').querySelectorAll('input');
+
 
 const modalId = document.getElementById('modal-id');
 const headerDialog = document.getElementById('header-dialog-section');
-
-const cardButtons = document.getElementById("card-section-id").querySelectorAll('button');
 
 
 function popupDialog() {
@@ -188,7 +188,7 @@ function popupFooter() {
 
 
   for (let i = 1; i <= 2; i++) {
-    
+
     const buttonFoot = document.createElement('div');
     buttonFoot.style.display = 'flex';
     buttonFoot.style.width = '50%';
@@ -246,7 +246,11 @@ cardButtons.forEach((button) => {
 
     scroll(0,0)
     modalId.showModal();
+
+    
   });
+
+
 })
 
 

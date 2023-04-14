@@ -1,20 +1,20 @@
 const burgerMenu = document.getElementById('mobileMenuid');
 const mobileMenu = document.getElementById('mobile-menu-page-id');
 
-const cardSectionId = document.getElementById('card-section-id');
+// const cardSectionId = document.getElementById('card-section-id');
 const aMS = document.getElementById('ams');
-const contactMeMobile = document.getElementById('contact_me_mobile');
+const contactMeMobile = document.getElementById('contactMobileId');
 
 const mobileLanding = document.getElementById('mobile-landing-id');
 const mobileMenuClose = document.getElementById('mobile-menu-close-id');
 const mobileMenuListLi = document.getElementById('moblie-menu-list-ul').querySelectorAll('li');
 
-const headerId = document.getElementById('header-id');
+const headerId = document.getElementById('mobileHeader');
 
 mobileMenu.style.display = 'none';
 
 function openMobilemenu() {
-  cardSectionId.style.display = 'none';
+  // cardSectionId.style.display = 'none';
   aMS.style.display = 'none';
   contactMeMobile.style.display = 'none';
 
@@ -29,7 +29,7 @@ function openMobilemenu() {
 function mobileMenuclose() {
   mobileMenu.style.display = 'none';
 
-  cardSectionId.style.display = 'block';
+  // cardSectionId.style.display = 'block';
   aMS.style.display = 'block';
   contactMeMobile.style.display = 'block';
 
