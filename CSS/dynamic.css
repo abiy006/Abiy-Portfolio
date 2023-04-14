@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@media (width > 1400px) {
+
+    .fullCardClass {
+        flex-direction: row;
+    }
+
+    .halfCardClass {
+        width: 50%;
+       }
+
+    .canopyDivClas {
+        width: 100%;
+    }
+
+    .singleCardh1 {
+        font-size: 400%;
+    }
+
+    .canopy-class {
+        font-size: 112.5%;
+        line-height: 150%;
+    }
+
+    .card-content-class {
+        font-size: 100%;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 2%;
+    }
+
+    .card-lang-button {
+        font-size: 80%;
+    }
+
+    .card-see-button {
+        width: 27%;
+        font-size: 100%;
+        margin-top: 10%;
+    }
+}
+
+@media ((width > 1200px) and (width <= 1400px)) {
+
+    .fullCardClass {
+        flex-direction: row;
+    }
+
+    .halfCardClass {
+        width: 50%;
+       }
+
+    .canopyDivClas {
+        width: 100%;
+    }
+
+    .singleCardh1 {
+        font-size: 280%;
+    }
+
+    .canopy-class {
+        font-size: 90%;
+        
+    }
+
+    .card-content-class {
+        font-size: 88%;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 3%;
+    }
+
+    .card-lang-button {
+        font-size: 70%;
+    }
+
+    .card-see-button {
+        width: 28%;
+        font-size: 100%;
+        margin-top: 10%;
+    }
+}
+
+@media ((width > 992px) and (width <= 1200px)) {
+
+    .fullCardClass {
+        flex-direction: row;
+    }
+
+    .halfCardClass {
+        width: 50%;
+       }
+
+    .canopyDivClas {
+        width: 100%;
+    }
+
+    .singleCardh1 {
+        font-size: 250%;
+    }
+
+    .canopy-class {
+        font-size: 80%;
+        line-height: 100%;
+    }
+
+    .card-content-class {
+        font-size: 80%;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 3%;
+    }
+
+    .card-lang-button {
+        font-size: 60%;
+    }
+
+    .card-see-button {
+        width: 32%;
+        font-size: 100%;
+        margin-top: 8%;
+    }
+}
+
+/* Desktop version started here */
+@media screen and ((width > 768px) and (width <= 992px)) {
+
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+   }
+
+   .canopyDivClas {
+    width: 100%;
+    }
+
+  .mobile-section {
+    display: none;
+  }
+
+  .singleCardh1 {
+    font-size: 200%;
+  }
+
+  .canopy-class {
+    font-size: 70%;
+    line-height: 70%;
+   }
+
+   .card-content-class {
+    font-size: 70%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 3%;
+    }
+
+    .card-lang-button {
+        font-size: 50%;
+    }
+
+    .card-see-button {
+        width: 32%;
+        font-size: 75%;
+        margin-top: 10%;
+    }
+}
+
+/* Mobile version started here*/
+@media ((width > 576px) and (width <= 768px)) {
+
+    .fullCardClass {
+        flex-direction: column;
+      }
+
+    .halfCardClass {
+        width: 100%;
+    }
+
+    .canopyDivClas {
+        width: 75%;
+        font-size: 120%;
+    }
+
+
+    .singleCardh1 {
+        font-size: 150%;
+    }
+
+    .canopy-class {
+        font-size: 60%;
+        line-height: 60%;
+    }
+
+    .card-content-class {
+        font-size: 90%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 2%;
+    }
+
+    .card-lang-button {
+      font-size: 70%;
+      text-transform: capitalize;
+    }
+
+    .card-see-button {
+        width: 30%;
+        font-size: 100%;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+}
+
+@media (width <= 576px) {
+
+    .fullCardClass {
+        flex-direction: column;
+      }
+
+    .halfCardClass {
+        width: 100%;
+    }
+
+    .canopyDivClas {
+        width: 95%;
+        font-size: 90%;
+    }
+
+    .singleCardh1 {
+        font-size: 180%;
+    }
+
+    .canopy-class {
+        font-size: 75%;
+    }
+
+    .card-content-class {
+        font-size: 90%;
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+
+    .card-lang-div {
+        padding-top: 2%;
+    }
+
+    .card-lang-button {
+      font-size: 60%;   
+      text-transform: capitalize;
+    }
+
+    .card-see-button {
+        width: 30%;
+        font-size: 80%;
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+    @media (width <= 500px) {
+        .card-see-button {
+            width: 40%;
+            font-size: 80%;
+            margin-top: 10%;
+            margin-bottom: 3%;
+        }
+    }
+}
+
+:root {
+  --h1-color: #172b4d;
+  --h2-color: #6070ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --html-color: #602;
+  --body-color: #760;
+  --color1-color: greenyellow;
+  --color2-color: #0ff;
+  --p-color: #344563;
+  --bg-color: #e5e5e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f9;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+
+.dynamic-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #602;
+  width: 100%;
+  height: auto;
+}

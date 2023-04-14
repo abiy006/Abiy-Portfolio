@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-@media (width >= 768px) {
+@media screen and (min-width: 768px) {
   .mobile-section {
     display: none;
   }
@@ -1095,7 +1095,7 @@ section.desktop_ams .about_part2 ul li ul li {
   height: 100vh;
 }
 
-.header-dialog-close {
+.header-dialog-close1 {
   width: 7%;
   color: greenyellow;
 }
