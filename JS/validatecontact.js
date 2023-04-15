@@ -31,4 +31,3 @@ const onSubmit = (e) => {
   contactForm.reset();
 };
 contactForm.addEventListener('submit', onSubmit);
-
