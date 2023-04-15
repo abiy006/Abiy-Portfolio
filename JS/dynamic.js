@@ -1,5 +1,8 @@
 const dynamicSection = document.getElementById('dynamic-id');
 
+const headerDialog = document.getElementById('header-dialog-section');
+const modalId = document.getElementById('modal-id');
+
 const projectsArray = [
   {
     id: 1,
@@ -212,8 +215,9 @@ function cardLang(langParentDiv) {
 function popupHeader(comingDiv, proName, mainPopup) {
   const divHeader = document.createElement('div');
   divHeader.style.display = 'flex';
-  divHeader.style.marginTop = '1rem';
+  // divHeader.style.marginTop = '1rem';
   divHeader.setAttribute('class', 'dialog-header-div');
+  divHeader.style.height = '15%';
 
   const singleCardh1 = document.createElement('h1');
   singleCardh1.textContent = proName;
@@ -247,8 +251,13 @@ function popupHeader(comingDiv, proName, mainPopup) {
   divClose.appendChild(svg);
 
   divClose.addEventListener('click', () => {
+    projectsArray.length = 0;
+
     mainPopup.style.display = 'none';
     mainPopup.close();
+
+    headerDialog.innerHTML = '';
+    document.body.classList.remove('blur');
   });
 
   divHeader.appendChild(divClose);
@@ -264,9 +273,10 @@ function popupCanopy(popupCanopy) {
   div1.style.color = 'orange';
   div1.style.gap = '0.5rem';
   div1.style.alignItems = 'center';
-  div1.style.paddingTop = '1.5rem';
-  div1.style.paddingBottom = '1rem';
-  div1.style.fontSize = '100%';
+  // div1.style.marginTop = '0.5rem';
+  div1.style.marginBottom = '1rem';
+  div1.style.fontSize = '80%';
+  div1.style.height = '5%';
 
   const h2First = document.createElement('p');
   h2First.textContent = 'CANOPY';
@@ -331,18 +341,26 @@ function popupCanopy(popupCanopy) {
 }
 
 function popupImage(var1ImgDiv, var2ImgPath) {
+  const popupImgDiv = document.createElement('div');
+  popupImgDiv.style.display = 'flex';
+  // divHeader.style.marginTop = '1rem';
+  popupImgDiv.setAttribute('class', 'dialog-img-div');
+  // popupImgDiv.style.height = '80%';
+
   const cardImage = document.createElement('img');
   cardImage.setAttribute('class', 'cardImageClass');
   // cardImage.src = '../Images/Tonic1-pic.svg';
   cardImage.src = `../Images/${var2ImgPath}`;
   cardImage.style.backgroundRepeat = 'no-repeat';
-  cardImage.style.backgroundSize = 'contain';
+  cardImage.style.backgroundSize = 'cover';
   cardImage.style.backgroundPosition = 'center';
   cardImage.style.backgroundColor = '#fff';
   cardImage.style.width = '100%';
-  // cardImage.style.maxHeight = '13.75rem';
+  cardImage.style.height = '100%';
 
-  var1ImgDiv.appendChild(cardImage);
+  popupImgDiv.appendChild(cardImage);
+
+  var1ImgDiv.appendChild(popupImgDiv);
 }
 
 function popupDescription(varDiv, varTxt) {
@@ -583,7 +601,7 @@ function popupFooter(parentFooterDiv) {
   parentFooterDiv.appendChild(divFooter);
 }
 
-function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
+function cardBtn(btnParentDiv, proIdNo) {
   const divSeeProj = document.createElement('div');
   divSeeProj.setAttribute('id', 'divSeeProjectId');
   divSeeProj.style.width = '100%';
@@ -610,32 +628,80 @@ function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
   btnParentDiv.appendChild(divSeeProj);
 
   button.addEventListener('click', () => {
-    const modalId = document.getElementById('modal-id');
+    const projectsArray = [
+      {
+        id: 1,
+        prjectName: 'Tonic',
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        projectImg: 'Tonic1-pic.svg',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        liveVersion: 'https://abiy006.github.io/',
+        source: 'https://github.com/abiy006/Abiy-Portfolio',
+      },
+      {
+        id: 2,
+        prjectName: 'Multi-Post Stories',
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        projectImg: 'Multi-PostStory1.svg',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        liveVersion: 'https://abiy006.github.io/',
+        source: 'https://github.com/abiy006/Abiy-Portfolio',
+      },
+      {
+        id: 3,
+        prjectName: 'Tonic',
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        projectImg: 'Tonic2-pic.svg',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        liveVersion: 'https://abiy006.github.io/',
+        source: 'https://github.com/abiy006/Abiy-Portfolio',
+      },
+      {
+        id: 4,
+        prjectName: 'Multi-Post Stories',
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+        projectImg: 'Multi-PostStory1.svg',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        liveVersion: 'https://abiy006.github.io/',
+        source: 'https://github.com/abiy006/Abiy-Portfolio',
+      },
+    ];
 
-    modalId.style.justifyContent = 'center';
-    modalId.style.width = '100%';
-    modalId.style.height = '200vh';
-    modalId.style.background = '#fff';
-    modalId.style.borderRadius = '1rem';
-    modalId.style.marginLeft = '1.25rem';
-    modalId.style.marginRight = '1rem';
+    // const modalId = document.getElementById('modal-id');
     modalId.style.display = 'flex';
+    // modalId.style.justifyContent = 'center';
+    // modalId.style.alignSelf = 'center';
+    modalId.style.width = '80%';
+    modalId.style.height = '90vh';
+    modalId.style.background = '#fff';
+    // modalId.style.borderRadius = '1rem';
 
-    const headerDialog = document.getElementById('header-dialog-section');
+    // modalId.style.marginRight = '5rem';
+    modalId.style.margin = '2rem';
+    modalId.style.marginLeft = '5rem';
+    modalId.scrollTop = '0';
+
+    // const headerDialog = document.getElementById('header-dialog-section');
     headerDialog.style.width = '100%';
-    headerDialog.style.height = 'auto';
+    // headerDialog.style.height = 'auto';
+    headerDialog.style.top = '0';
     headerDialog.style.background = '#fff';
     headerDialog.style.margin = '1rem';
     headerDialog.style.display = 'flex';
     headerDialog.style.flexDirection = 'column';
+    headerDialog.scrollTop = '0';
 
     const dialogDiv1 = document.createElement('div');
     dialogDiv1.setAttribute('class', 'dialogDiv1Class');
     dialogDiv1.style.display = 'flex';
+    dialogDiv1.style.width = '100%';
+    // dialogDiv1.style.height = '65%';
 
     const dialogDiv2 = document.createElement('div');
     dialogDiv2.setAttribute('class', 'dialogDiv2Class');
     dialogDiv2.style.display = 'flex';
+    dialogDiv2.style.width = '100%';
+    dialogDiv2.style.height = '35%';
     const dialogDiv2A = document.createElement('div');
     dialogDiv2A.setAttribute('class', 'dialogDiv2A');
     dialogDiv2A.style.display = 'flex';
@@ -651,11 +717,16 @@ function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
 
     dialogDiv2.appendChild(dialogDiv2B);
 
-    popupHeader(dialogDiv1, passedHeading, modalId);
-    popupCanopy(dialogDiv1);
-    popupImage(dialogDiv1, passedImg);
+    // alert(proIdNo);
 
-    popupDescription(dialogDiv2A, passedDesc1);
+    // popupHeader(dialogDiv1, passedHeading, modalId);
+    popupHeader(dialogDiv1, projectsArray[proIdNo].prjectName, modalId);
+    popupCanopy(dialogDiv1);
+    // popupImage(dialogDiv1, passedImg);
+    popupImage(dialogDiv1, projectsArray[proIdNo].projectImg);
+
+    // popupDescription(dialogDiv2A, passedDesc1);
+    popupDescription(dialogDiv2A, projectsArray[proIdNo].description);
     popupLanguages(dialogDiv2B);
     popupLine(dialogDiv2B);
     popupFooter(dialogDiv2B);
@@ -664,8 +735,10 @@ function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
     headerDialog.appendChild(dialogDiv1);
     headerDialog.appendChild(dialogDiv2);
 
-    // scroll(0, 0);
     modalId.showModal();
+    modalId.scrollTop = '0';
+
+    document.body.classList.add('blur');
   });
 
   button.onmouseenter = function () {
@@ -682,7 +755,7 @@ function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
   };
 }
 
-function dynamicCards(imgName, projName, projId, projDesc) {
+function dynamicCards(imgName, projName, projId) {
   const singleCard = document.createElement('div');
   singleCard.setAttribute('id', 'individualCard');
   singleCard.style.display = 'flex';
@@ -690,7 +763,6 @@ function dynamicCards(imgName, projName, projId, projDesc) {
   singleCard.style.width = '75%';
 
   if (projId % 2) {
-    // singleCard.style.flexDirection = 'row-reverse';
     singleCard.setAttribute('class', 'fullCardClass');
   } else {
     singleCard.setAttribute('class', 'oldCardClass');
@@ -719,7 +791,7 @@ function dynamicCards(imgName, projName, projId, projDesc) {
 
       cardLang(halfCard);
 
-      cardBtn(halfCard, projId, imgName, projName, projDesc);
+      cardBtn(halfCard, projId);
     }
 
     singleCard.appendChild(halfCard);
@@ -730,5 +802,5 @@ function dynamicCards(imgName, projName, projId, projDesc) {
 
 for (let i = 0; i < projectsArray.length; i += 1) {
   dynamicCards(projectsArray[i].projectImg, projectsArray[i].prjectName,
-    i, projectsArray[i].description);
+    i);
 }
