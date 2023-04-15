@@ -1,7 +1,68 @@
   const dynamicSection = document.getElementById('dynamic-id');
 
+  const modalId = document.getElementById('modal-id');
+  
+  modalId.style.justifyContent = 'center';
+  modalId.style.width = '100%';
+  modalId.style.height = '200vh';
+  modalId.style.background = '#fff';
+  modalId.style.borderRadius = '1rem';
+  modalId.style.marginLeft = '1.25rem';
+  modalId.style.marginRight = '1rem';
 
-  function dynamicCards(imgName, projName, projId) {
+  const headerDialog = document.getElementById('header-dialog-section');
+  headerDialog.style.width = '100%';
+  headerDialog.style.height = 'auto';
+  headerDialog.style.background = '#fff';
+  headerDialog.style.margin = '1rem';
+
+
+  const projectsArray = [
+    {
+      id: 1,
+      prjectName: 'Tonic',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      projectImg: 'Tonic1-pic.svg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveVersion: 'https://abiy006.github.io/',
+      source: 'https://github.com/abiy006/Abiy-Portfolio',
+    },
+  
+    {
+      id: 2,
+      prjectName: 'Multi-Post Stories',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      projectImg: 'Multi-PostStory1.svg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveVersion: 'https://abiy006.github.io/',
+      source: 'https://github.com/abiy006/Abiy-Portfolio',
+    },
+    {
+      id: 3,
+      prjectName: 'Tonic',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      projectImg: 'Tonic2-pic.svg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveVersion: 'https://abiy006.github.io/',
+      source: 'https://github.com/abiy006/Abiy-Portfolio',
+    },
+    {
+      id: 4,
+      prjectName: 'Multi-Post Stories',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      projectImg: 'Multi-PostStory1.svg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveVersion: 'https://abiy006.github.io/',
+      source: 'https://github.com/abiy006/Abiy-Portfolio',
+    },
+  ];
+
+
+
+
+
+
+  function dynamicCards(imgName, projName, projId, projDesc) {
 
     const singleCard = document.createElement('div');
     singleCard.setAttribute('id','individualCard');
@@ -38,7 +99,7 @@
 
         cardLang(halfCard);
 
-        cardBtn(halfCard, projId);
+        cardBtn(halfCard, projId, imgName, projName, projDesc);
   
         }
 
@@ -228,7 +289,7 @@
     langParentDiv.appendChild(divLang);
   }
   
-  function cardBtn(btnParentDiv, proIdNo) {
+  function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
 
     const divSeeProj = document.createElement('div');
     divSeeProj.setAttribute('id','divSeeProjectId');
@@ -244,7 +305,6 @@
     button.style.border = '1px solid #6070ff'
     button.style.borderRadius = '0.5em';
     button.style.padding = '0.5em';
-
     button.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
     button.style.fontStyle = 'normal';
     button.style.fontWeight = '500';
@@ -259,14 +319,21 @@
     btnParentDiv.appendChild(divSeeProj);
 
     button.addEventListener('click', function(event) {
+
+        modalId.style.display = 'flex';
         popupDialog();
-        popupHeader()
-        popupCanopy();
-        popupImage();
-        popupDescription();
-        popupLanguages();
+        popupHeader(headerDialog, passedHeading);
+        // popupCanopy();
+        cardCanopy(headerDialog);
+        popupImage(headerDialog, passedImg);
+        // cardImage(headerDialog, passedImg);
+        popupDescription(headerDialog, passedDesc1);
+        // cardDesc(headerDialog, passedDesc1);
+        // popupLanguages();
+        popupLanguages(headerDialog)
         popupLine();
         popupFooter();
+        popupLine2();
     
         scroll(0,0)
         modalId.showModal();
@@ -291,86 +358,61 @@
   }
 
 
-  const projectsArray = [
-    {
-      id: 1,
-      prjectName: 'Tonic',
-      description: "Lorem Ipsum is r took a galley of type and scrambled it 1960s.",
-      projectImg: 'Tonic1-pic.svg',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveVersion: 'https://abiy006.github.io/',
-      source: 'https://github.com/abiy006/Abiy-Portfolio',
-    },
-  
-    {
-      id: 2,
-      prjectName: 'Multi-Post Stories',
-      description: "Lorem Ipsum is r took a galley of type and scrambled it 1960s.",
-      projectImg: 'Multi-PostStory1.svg',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveVersion: 'https://abiy006.github.io/',
-      source: 'https://github.com/abiy006/Abiy-Portfolio',
-    },
-    {
-      id: 3,
-      prjectName: 'Tonic',
-      description: "Lorem Ipsum is r took a galley of type and scrambled it 1960s.",
-      projectImg: 'Tonic2-pic.svg',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveVersion: 'https://abiy006.github.io/',
-      source: 'https://github.com/abiy006/Abiy-Portfolio',
-    },
-    {
-      id: 4,
-      prjectName: 'Multi-Post Stories',
-      description: "Lorem Ipsum is r took a galley of type and scrambled it 1960s.",
-      projectImg: 'Multi-PostStory1.svg',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveVersion: 'https://abiy006.github.io/',
-      source: 'https://github.com/abiy006/Abiy-Portfolio',
-    },
-  ];
-
-   console.log(projectsArray);
 
 
   for (let i = 0; i < projectsArray.length; i++) {
 
-    dynamicCards(projectsArray[i].projectImg, projectsArray[i].prjectName, i);
+    dynamicCards(projectsArray[i].projectImg, projectsArray[i].prjectName, i, projectsArray[i].description);
 
   }
 
 
-  const modalId = document.getElementById('modal-id');
-  const headerDialog = document.getElementById('header-dialog-section');
+
+
   
   
   function popupDialog() {
     headerDialog.style.display = 'flex';
     headerDialog.style.flexDirection = 'column';
-    headerDialog.style.margin = '1rem';
-  
   }
   
-  function popupHeader() {
+  function popupHeader(comingDiv, proName) {
     const divHeader = document.createElement('div');
     divHeader.style.display = 'flex';
     divHeader.style.justifyContent = 'space-between';
     divHeader.setAttribute('class', 'dialog-header-div');
-    divHeader.style.color = 'red';
-    divHeader.style.width = '90%';
   
-    const h1 = document.createElement('h1');
-    h1.textContent = 'New Heading!!!';
-    h1.setAttribute('class', 'note');
-    h1.style.color = 'red';
-    h1.style.top = '0';
-    divHeader.appendChild(h1);
+    // const h1 = document.createElement('h1');
+    // h1.textContent = 'Tonic';
+    // h1.setAttribute('class', 'note');
+    // h1.style.color = 'red';
+    // h1.style.width = '100%';
+    // const divHeader = document.createElement('div');
+    // divHeader.setAttribute('id','divHdrId');
+    // divHeader.style.display = 'flex';
+    // divHeader.setAttribute('class', 'card-hdr-div');
+    // divHeader.style.color = '#fff';
+    // divHeader.style.width = '100%';
+
+    const singleCardh1 = document.createElement('h1');
+    singleCardh1.textContent = proName;
+    singleCardh1.setAttribute('class', 'singleCardh1');
+    singleCardh1.style.color = '#091e42';
+    singleCardh1.style.width = '100%';
+    singleCardh1.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    singleCardh1.style.fontStyle = 'normal';
+    singleCardh1.style.fontWeight = '700';
+
+    // divHeader.appendChild(singleCardh1);
+
+    // headerParentDiv.appendChild(divHeader);
+
+    divHeader.appendChild(singleCardh1);
   
-    const div1 = document.createElement('div');
-    div1.setAttribute('class', 'header-dialog-close2');
-    div1.style.color = 'red';
-    div1.style.width = '7%';
+    // const div1 = document.createElement('div');
+    // div1.setAttribute('class', 'header-dialog-close2');
+    // div1.style.color = 'red';
+    // div1.style.width = '7%';
   
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('fill', 'none');
@@ -383,10 +425,10 @@
     path.setAttribute('stroke-linejoin', 'round');
     path.setAttribute('d', 'M6 18L18 6M6 6l12 12');
     svg.appendChild(path);
-    div1.appendChild(svg);
-    divHeader.appendChild(div1);
+    divHeader.appendChild(svg);
+    // divHeader.appendChild(div1);
   
-    headerDialog.appendChild(divHeader);
+    comingDiv.appendChild(divHeader);
   }
   
   function popupCanopy() {
@@ -441,76 +483,117 @@
     headerDialog.appendChild(div1);
   }
   
-  function popupImage() {
-    const imageDiv = document.createElement('div');
-    imageDiv.style.width = '80%';
-    imageDiv.style.height = '5rem';
-  
-    const actualImage = document.createElement('img');
-    actualImage.style.width = '100%';
-    actualImage.style.height = '100%';
-    // actualImage.style.backgroundImage = "url('https://sebhastian.com/img/default.png')";
-    actualImage.style.backgroundImage = "url('../Images/Tonic1-pic.svg')";
-    actualImage.style.backgroundRepeat = 'no-repeat';
-    actualImage.style.backgroundSize = 'contain';
-  
-    imageDiv.appendChild(actualImage);
-  
-    headerDialog.appendChild(imageDiv);
+  function popupImage(var1ImgDiv, var2ImgPath) {
+
+    const cardImage = document.createElement('img');
+    cardImage.setAttribute('class', 'cardImageClass');
+    // cardImage.src = '../Images/Tonic1-pic.svg';
+    cardImage.src = '../Images/' + var2ImgPath;
+    cardImage.style.backgroundRepeat = 'no-repeat';
+    cardImage.style.backgroundSize = 'contain';
+    cardImage.style.backgroundPosition = 'center';
+    cardImage.style.backgroundColor = '#fff';
+    cardImage.style.width = '100%';
+    cardImage.style.maxHeight = '13.75rem';
+
+    var1ImgDiv.appendChild(cardImage);
   
   }
   
-  function popupDescription() {
+  function popupDescription(varDiv, varTxt) {
+
     const divDescription = document.createElement('div');
+    divDescription.setAttribute('id','divDescId');
     divDescription.style.display = 'flex';
-    divDescription.setAttribute('class', 'dialog-desc-div');
-    divDescription.style.color = 'red';
-    divDescription.style.width = '90%';
+    divDescription.setAttribute('class', 'card-desc-div');
+    divDescription.style.width = '100%';
   
     const pDesc = document.createElement('p');
-    pDesc.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-    pDesc.setAttribute('class', 'desc');
-    pDesc.style.color = 'red';
-    
+    pDesc.textContent = varTxt;
+    pDesc.setAttribute('class', 'card-content-class');
+    pDesc.style.color = '#344563';
+    pDesc.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    pDesc.style.fontStyle = 'normal';
+    pDesc.style.fontWeight = '400';
+    pDesc.style.width = '100%';
+
     divDescription.appendChild(pDesc);
   
-    headerDialog.appendChild(divDescription);
+    varDiv.appendChild(divDescription);
   }
   
-  function popupLanguages() {
+  function popupLanguages(varDiv) {
+
     const divLang = document.createElement('div');
+    divLang.setAttribute('id','divLangId');
     divLang.style.display = 'flex';
-    divLang.setAttribute('class', 'dialog-lang-div');
-    divLang.style.color = 'red';
-    divLang.style.width = '90%';
+    divLang.style.alignItems = 'center';
+    divLang.setAttribute('class', 'card-lang-div');
+    divLang.style.width = '100%';
+    divLang.style.gap = '1rem';
+    // divLang.style.margin = '1rem';
   
     for (let i = 1; i <= 3; i++) {
       const button = document.createElement('input');
+      button.setAttribute('class', 'card-lang-button');
       button.type  = 'button';
-      // button.value = 'button' + i;
+      button.style.color = '#6070ff';
+      button.style.padding = '2px 8px';
+      button.style.backgroundColor = '#ebebff';
+      button.style.border = '1px solid #ebebff'
+      button.style.borderRadius = '0.5rem';
+      button.setAttribute('id','button' + i);
+      button.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+      button.style.fontStyle = 'normal';
+      button.style.fontSize = '80%';
+      button.style.fontWeight = '500';
+      button.style.alignItems = 'center';
+      button.style.letterSpacing = '0.03em';
+      button.style.margin = '1px';
+
       if (i == 1) {
-        button.value = 'HTML';
+        button.value = 'html';
       } else if (i == 2) {
-        button.value = 'CSS';
+        button.value = 'css';
       } else if (i == 3) {
-        button.value = 'JavaScript';
+        button.value = 'javaScript';
       }
       divLang.appendChild(button);
     }
   
-    headerDialog.appendChild(divLang);
+    varDiv.appendChild(divLang);
   }
   
   function popupLine() {
+
     const divLine = document.createElement('div');
     divLine.style.display = 'flex';
     divLine.setAttribute('class', 'dialog-desc-div');
-    divLine.style.color = 'red';
     divLine.style.width = '100%';
   
     const lineHr = document.createElement('hr');
     lineHr.style.width = '100%';
-    lineHr.style.color = 'red';
+    lineHr.style.marginBottom = '0.5rem';
+    lineHr.style.marginTop = '1.5rem';
+    
+    divLine.appendChild(lineHr);
+  
+    headerDialog.appendChild(divLine);
+  }
+
+  function popupLine2() {
+
+    const divLine = document.createElement('div');
+    divLine.style.display = 'flex';
+    divLine.setAttribute('class', 'dialog-desc-div');
+    divLine.style.width = '100%';
+    divLine.style.color = '#fff';
+  
+    const lineHr = document.createElement('hr');
+    lineHr.style.width = '100%';
+    lineHr.style.marginBottom = '-0.5rem';
+    lineHr.style.marginTop = '1rem';
+    lineHr.style.color = '#fff';
     
     divLine.appendChild(lineHr);
   
@@ -518,13 +601,15 @@
   }
   
   function popupFooter() {
+
     const divFooter = document.createElement('div');
     divFooter.style.display = 'flex';
     divFooter.setAttribute('class', 'dialog-foot-div');
-    divFooter.style.color = 'red';
     divFooter.style.width = '100%';
-    divFooter.style.height = '1rem';
-    divFooter.style.gap = '2rem';
+    divFooter.style.height = '1.5rem';
+    divFooter.style.gap = '1rem';
+    divFooter.style.marginBottom = '1.5rem';
+    divFooter.style.marginTop = '1.5rem';
   
   
     for (let i = 1; i <= 2; i++) {
@@ -532,36 +617,53 @@
       const buttonFoot = document.createElement('div');
       buttonFoot.style.display = 'flex';
       buttonFoot.style.width = '50%';
-      buttonFoot.style.height = '2rem';
+      buttonFoot.style.height = '3rem';
+      buttonFoot.style.border = '1px solid #6070ff'
+      buttonFoot.style.borderRadius = '0.5em';
+      buttonFoot.style.padding = '0.5em';
+      buttonFoot.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+      buttonFoot.style.fontStyle = 'normal';
+      buttonFoot.style.fontWeight = '500';
+      buttonFoot.style.letterSpacing = '0.03em';
+      buttonFoot.style.alignItems = 'center';
+      buttonFoot.style.textAlign = 'center';
+      buttonFoot.style.color = '#396df2';
+      buttonFoot.style.gap = '0.5rem';
+      buttonFoot.style.backgroundColor = '#fff';
       // button.value = 'button' + i;
       if (i == 1) {
   
         const foot1Text = document.createElement('p');
         foot1Text.textContent = "See live";
-        foot1Text.style.backgroundColor = 'blue';
+        foot1Text.style.backgroundColor = '#fff';
+
         buttonFoot.appendChild(foot1Text);
   
         const foot1Img = document.createElement('img');
-        foot1Img.style.backgroundColor = 'red';
         foot1Img.style.backgroundImage = "url('../Images/See-live.svg')";
         foot1Img.style.backgroundRepeat = 'no-repeat';
+        foot1Img.style.backgroundSize = 'contain';
         foot1Img.style.width = '1.5rem';
         foot1Img.style.height = '1.5rem';
+
         buttonFoot.appendChild(foot1Img);
   
       } else if (i == 2) {
   
         const foot1Text = document.createElement('p');
-        foot1Text.textContent = "See live";
-        foot1Text.style.backgroundColor = 'blue';
+        foot1Text.textContent = "See source";
+        foot1Text.style.backgroundColor = '#fff';
+
         buttonFoot.appendChild(foot1Text);
   
         const foot1Img = document.createElement('img');
-        foot1Img.style.backgroundColor = 'red';
+        foot1Img.style.backgroundColor = '#fff';
         foot1Img.style.backgroundImage = "url('../Images/Git-Icon.svg')";
         foot1Img.style.backgroundRepeat = 'no-repeat';
+        foot1Img.style.backgroundSize = 'contain';
         foot1Img.style.width = '1.5rem';
         foot1Img.style.height = '1.5rem';
+
         buttonFoot.appendChild(foot1Img);
   
       }
