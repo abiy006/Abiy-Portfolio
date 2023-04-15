@@ -36,8 +36,8 @@ const onSubmit = (e) => {
       message2.style.marginTop = '1rem';
     });
 
-    contactForm1.reset();
-    contactForm2.reset();
+  contactForm1.reset();
+  contactForm2.reset();
 };
 contactForm1.addEventListener('submit', onSubmit);
 contactForm2.addEventListener('submit', onSubmit);
