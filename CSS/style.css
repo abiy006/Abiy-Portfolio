@@ -4,24 +4,31 @@
   #mobileHeader {
     display: none;
   }
+
   #desktopHeader {
     display: flex;
   }
+
   .mobile-landing {
     display: none;
   }
+
   .desktop-landing {
     display: grid;
   }
+
   .ams {
     display: none;
   }
+
   .contact_me_mobile {
     display: none;
   }
+
   .desktop_ams {
     display: flex;
   }
+
   .contact_me_desktop {
     display: grid;
   }
@@ -31,24 +38,31 @@
   #desktopHeader {
     display: none;
   }
+
   #mobileHeader {
     display: flex;
   }
+
   .mobile-landing {
     display: flex;
   }
+
   .desktop-landing {
     display: none;
   }
+
   .ams {
     display: flex;
   }
+
   .contact_me_mobile {
     display: flex;
   }
+
   .desktop_ams {
     display: none;
   }
+
   .contact_me_desktop {
     display: none;
   }
@@ -91,6 +105,63 @@ body {
   width: 100%;
   height: auto;
   overflow-x: auto;
+}
+
+.lets-connect-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 170px;
+  list-style: none;
+}
+
+.letconnect_icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 170px;
+  list-style: none;
+}
+
+.mobile-menu-page-class ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+}
+
+.About-languages ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.About-languages ul ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-landing-content .lets-con-desk-icon ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 170px;
+  list-style: none;
+}
+
+section.desktop_ams .about_part2 ul {
+  list-style: none;
+}
+
+section.desktop_ams .about_part2 ul li ul {
+  display: flex;
+  list-style: none;
 }
 
 #mobileHeader {
@@ -166,15 +237,6 @@ body {
   text-align: left;
   margin-left: 2rem;
   margin-bottom: 1rem;
-}
-
-.lets-connect-icons ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 170px;
-  list-style: none;
 }
 
 .desktop-landing-content p {
@@ -297,15 +359,6 @@ section.ams p {
   margin-top: 20px;
 }
 
-.letconnect_icons ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 170px;
-  list-style: none;
-}
-
 .about-lang-menu {
   display: flex;
   justify-content: center;
@@ -338,31 +391,9 @@ section.ams p {
   text-decoration: none;
 }
 
-.mobile-menu-page-class ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  align-items: start;
-}
-
 .mobile-menu-page-class ul li {
   display: flex;
   margin-bottom: 1rem;
-}
-
-.About-languages ul {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  margin-left: 0.5rem;
-}
-
-.About-languages ul ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .About-languages ul ul li {
@@ -630,14 +661,6 @@ section.contact_me_mobile > hr {
   text-align: left;
 }
 
-.desktop-landing-content .lets-con-desk-icon ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 170px;
-  list-style: none;
-}
-
 .desk_main_content {
   margin-left: 10px;
   margin-right: 10px;
@@ -710,15 +733,6 @@ section.desktop_ams .about_part1 p {
   color: #344563;
   text-align: left;
   margin-top: 10px;
-}
-
-section.desktop_ams .about_part2 ul {
-  list-style: none;
-}
-
-section.desktop_ams .about_part2 ul li ul {
-  display: flex;
-  list-style: none;
 }
 
 .letconnect_icons ul li:hover {
@@ -953,7 +967,7 @@ section.desktop_ams .about_part2 ul li ul li {
 
 .dialog-header-div svg {
   width: 100%;
-  color: #67798E;
+  color: #67798e;
 }
 
 #dialogCloseDiv {

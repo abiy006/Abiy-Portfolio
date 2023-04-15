@@ -1,235 +1,230 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 @media (width > 1400px) {
-
-    .fullCardClass {
-        flex-direction: row;
-    }
-
-    .halfCardClass {
-        width: 50%;
-       }
-
-    .canopyDivClas {
-        width: 100%;
-    }
-
-    .singleCardh1 {
-        font-size: 350%;
-    }
-
-    .canopy-class {
-        font-size: 112.5%;
-        line-height: 150%;
-    }
-
-    .card-content-class {
-        font-size: 150%;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    }
-
-    .card-lang-div {
-        padding-top: 2%;
-    }
-
-    .card-lang-button {
-        font-size: 100%;
-    }
-
-    .seeProjectBtn {
-        width: 27%;
-        font-size: 120%;
-        margin-top: 7%;
-    }
-
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
-
-    .dialogDiv2Class {
-        flex-direction: row;
-    }
-
-    #divDescId2 {
-        display: flex;
-    }
-
-    #subDivLang-2 {
-        display: flex;
-    }
-
-    .popup-footer-btn-txt {
-        font-size: 70%;
-    }
-
-    .popup-footer-btn-img {
-        height: 60%;
-    }
-
-    .dialogDiv2B {
-        margin-top: 4%;
-    }
-}
-
-@media ((width > 1200px) and (width <= 1400px)) {
-
-    .fullCardClass {
-        flex-direction: row;
-    }
-
-    .halfCardClass {
-        width: 50%;
-       }
-
-    .canopyDivClas {
-        width: 100%;
-    }
-
-    .singleCardh1 {
-        font-size: 280%;
-    }
-
-    .canopy-class {
-        font-size: 90%;
-        
-    }
-
-    .card-content-class {
-        font-size: 100%;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    }
-
-    .card-lang-div {
-        padding-top: 3%;
-    }
-
-    .card-lang-button {
-        font-size: 90%;
-    }
-
-    .seeProjectBtn {
-        width: 28%;
-        font-size: 110%;
-        margin-top: 10%;
-    }
-
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
-
-    .dialogDiv2Class {
-        flex-direction: row;
-    }
-
-    #divDescId2 {
-        display: flex;
-    }
-
-    #subDivLang-2 {
-        display: flex;
-    }
-
-    .popup-footer-btn-txt {
-        font-size: 70%;
-    }
-
-    .popup-footer-btn-img {
-        height: 60%;
-    }
-
-    .dialogDiv2B {
-        margin-top: 4%;
-    }
-}
-
-@media ((width > 992px) and (width <= 1200px)) {
-
-    .fullCardClass {
-        flex-direction: row;
-    }
-
-    .halfCardClass {
-        width: 50%;
-       }
-
-    .canopyDivClas {
-        width: 100%;
-    }
-
-    .singleCardh1 {
-        font-size: 200%;
-    }
-
-    .canopy-class {
-        font-size: 80%;
-        line-height: 100%;
-    }
-
-    .card-content-class {
-        font-size: 90%;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    }
-
-    .card-lang-div {
-        padding-top: 3%;
-    }
-
-    .card-lang-button {
-        font-size: 70%;
-    }
-
-    .seeProjectBtn {
-        width: 32%;
-        font-size: 100%;
-        margin-top: 8%;
-    }
-
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
-
-    .dialogDiv2Class {
-        flex-direction: row;
-    }
-
-    #divDescId2 {
-        display: flex;
-    }
-
-    #subDivLang-2 {
-        display: flex;
-    }
-
-    .popup-footer-btn-txt {
-        font-size: 70%;
-    }
-
-    .popup-footer-btn-img {
-        height: 60%;
-    }
-
-    .dialogDiv2B {
-        margin-top: 4%;
-    }
-}
-
-/* Desktop version started here */
-@media screen and ((width > 768px) and (width <= 992px)) {
-
   .fullCardClass {
     flex-direction: row;
   }
 
   .halfCardClass {
     width: 50%;
-   }
+  }
 
-   .canopyDivClas {
+  .canopyDivClas {
     width: 100%;
-    }
+  }
+
+  .singleCardh1 {
+    font-size: 350%;
+  }
+
+  .canopy-class {
+    font-size: 112.5%;
+    line-height: 150%;
+  }
+
+  .card-content-class {
+    font-size: 150%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 2%;
+  }
+
+  .card-lang-button {
+    font-size: 100%;
+  }
+
+  .seeProjectBtn {
+    width: 27%;
+    font-size: 120%;
+    margin-top: 7%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+}
+
+@media (width > 1200px) and (width <= 1400px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
+
+  .singleCardh1 {
+    font-size: 280%;
+  }
+
+  .canopy-class {
+    font-size: 90%;
+  }
+
+  .card-content-class {
+    font-size: 100%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 3%;
+  }
+
+  .card-lang-button {
+    font-size: 90%;
+  }
+
+  .seeProjectBtn {
+    width: 28%;
+    font-size: 110%;
+    margin-top: 10%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+}
+
+@media (width > 992px) and (width <= 1200px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
+
+  .singleCardh1 {
+    font-size: 200%;
+  }
+
+  .canopy-class {
+    font-size: 80%;
+    line-height: 100%;
+  }
+
+  .card-content-class {
+    font-size: 90%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 3%;
+  }
+
+  .card-lang-button {
+    font-size: 70%;
+  }
+
+  .seeProjectBtn {
+    width: 32%;
+    font-size: 100%;
+    margin-top: 8%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+}
+
+/* Desktop version started here */
+@media screen and (width > 768px) and (width <= 992px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
 
   .mobile-section {
     display: none;
@@ -241,209 +236,205 @@
 
   .canopy-class {
     font-size: 80%;
-   }
+  }
 
-   .card-content-class {
+  .card-content-class {
     font-size: 80%;
     margin-top: 5%;
     margin-bottom: 3%;
-    }
+  }
 
-    .card-lang-div {
-        padding-top: 1%;
-    }
+  .card-lang-div {
+    padding-top: 1%;
+  }
 
-    .card-lang-button {
-        font-size: 50%;
-    }
+  .card-lang-button {
+    font-size: 50%;
+  }
 
-    .seeProjectBtn {
-        width: 32%;
-        font-size: 75%;
-        margin-top: 5%;
-    }
+  .seeProjectBtn {
+    width: 32%;
+    font-size: 75%;
+    margin-top: 5%;
+  }
 
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
 
-    .dialogDiv2Class {
-        flex-direction: row;
-    }
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
 
-    #divDescId2 {
-        display: flex;
-    }
+  #divDescId2 {
+    display: flex;
+  }
 
-    #subDivLang-2 {
-        display: flex;
-    }
+  #subDivLang-2 {
+    display: flex;
+  }
 
-    .popup-footer-btn-txt {
-        font-size: 70%;
-    }
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
 
-    .popup-footer-btn-img {
-        height: 60%;
-    }
+  .popup-footer-btn-img {
+    height: 60%;
+  }
 
-    .dialogDiv2B {
-        margin-top: 4%;
-    }
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
 }
 
-/* Mobile version started here*/
-@media ((width > 576px) and (width <= 768px)) {
+/* Mobile version started here */
+@media (width > 576px) and (width <= 768px) {
+  .fullCardClass {
+    flex-direction: column;
+  }
 
-    .fullCardClass {
-        flex-direction: column;
-      }
+  .halfCardClass {
+    width: 100%;
+  }
 
-    .halfCardClass {
-        width: 100%;
-    }
+  .canopyDivClas {
+    width: 75%;
+    font-size: 130%;
+  }
 
-    .canopyDivClas {
-        width: 75%;
-        font-size: 130%;
-    }
+  .singleCardh1 {
+    font-size: 250%;
+  }
 
+  .canopy-class {
+    font-size: 80%;
+  }
 
-    .singleCardh1 {
-        font-size: 250%;
-    }
+  .card-content-class {
+    font-size: 120%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
 
-    .canopy-class {
-        font-size: 80%;
-    }
+  .card-lang-div {
+    padding-top: 2%;
+  }
 
-    .card-content-class {
-        font-size: 120%;
-        margin-top: 4%;
-        margin-bottom: 3%;
-        width: 80%;
-    }
+  .card-lang-button {
+    font-size: 90%;
+    text-transform: capitalize;
+  }
 
-    .card-lang-div {
-        padding-top: 2%;
-    }
+  .seeProjectBtn {
+    width: 35%;
+    font-size: 120%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
 
-    .card-lang-button {
-      font-size: 90%;
-      text-transform: capitalize;
-    }
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
 
-    .seeProjectBtn {
-        width: 35%;
-        font-size: 120%;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    }
+  .dialogDiv2Class {
+    flex-direction: column;
+  }
 
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
+  #divDescId2 {
+    display: none;
+  }
 
-    .dialogDiv2Class {
-        flex-direction: column;
-    }
+  #subDivLang-2 {
+    display: none;
+  }
 
-    #divDescId2 {
-        display: none;
-    }
+  .popup-footer-btn-txt {
+    font-size: 100%;
+  }
 
-    #subDivLang-2 {
-        display: none;
-    }
-
-    .popup-footer-btn-txt {
-        font-size: 100%;
-    }
-
-    .popup-footer-btn-img {
-        height: 60%;
-    }
+  .popup-footer-btn-img {
+    height: 60%;
+  }
 }
 
 @media (width <= 576px) {
+  .fullCardClass {
+    flex-direction: column;
+  }
 
-    .fullCardClass {
-        flex-direction: column;
-      }
+  .halfCardClass {
+    width: 100%;
+  }
 
-    .halfCardClass {
-        width: 100%;
-    }
+  .canopyDivClas {
+    width: 95%;
+    font-size: 90%;
+  }
 
-    .canopyDivClas {
-        width: 95%;
-        font-size: 90%;
-    }
+  .singleCardh1 {
+    font-size: 180%;
+  }
 
-    .singleCardh1 {
-        font-size: 180%;
-    }
+  .canopy-class {
+    font-size: 75%;
+  }
 
-    .canopy-class {
-        font-size: 75%;
-    }
+  .card-content-class {
+    font-size: 90%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
 
-    .card-content-class {
-        font-size: 90%;
-        margin-top: 4%;
-        margin-bottom: 3%;
-        width: 80%;
-    }
+  .card-lang-div {
+    padding-top: 2%;
+  }
 
-    .card-lang-div {
-        padding-top: 2%;
-    }
+  .card-lang-button {
+    font-size: 60%;
+    text-transform: capitalize;
+  }
 
-    .card-lang-button {
-      font-size: 60%;   
-      text-transform: capitalize;
-    }
+  .seeProjectBtn {
+    width: 30%;
+    font-size: 80%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
 
+  @media (width <= 500px) {
     .seeProjectBtn {
-        width: 30%;
-        font-size: 80%;
-        margin-top: 10%;
-        margin-bottom: 3%;
+      width: 40%;
+      font-size: 80%;
+      margin-top: 10%;
+      margin-bottom: 3%;
     }
+  }
 
-    @media (width <= 500px) {
-        .seeProjectBtn {
-            width: 40%;
-            font-size: 80%;
-            margin-top: 10%;
-            margin-bottom: 3%;
-        }
-    }
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
 
-    .dialogDiv1Class {
-        flex-direction: column;
-    }
+  .dialogDiv2Class {
+    flex-direction: column;
+  }
 
-    .dialogDiv2Class {
-        flex-direction: column;
-    }
+  #divDescId2 {
+    display: none;
+  }
 
-    #divDescId2 {
-        display: none;
-    }
+  #subDivLang-2 {
+    display: none;
+  }
 
-    #subDivLang-2 {
-        display: none;
-    }
+  .popup-footer-btn-txt {
+    font-size: 100%;
+  }
 
-    .popup-footer-btn-txt {
-        font-size: 100%;
-    }
-
-    .popup-footer-btn-img {
-        height: 60%;
-    }
-
+  .popup-footer-btn-img {
+    height: 60%;
+  }
 }
 
 :root {
@@ -494,12 +485,6 @@ body {
   height: auto;
 }
 
-
-#button2 button:hover {
-  background-color: #6070ff;
-  color: #fff;
-}
-
 .seeProjectBtn button:active {
   background-color: #2230d2;
   color: #fff;
@@ -510,4 +495,9 @@ body {
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 8px;
+}
+
+#button2 button:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
