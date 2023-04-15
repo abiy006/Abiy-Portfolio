@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@media (width > 1400px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
+
+  .singleCardh1 {
+    font-size: 350%;
+  }
+
+  .canopy-class {
+    font-size: 112.5%;
+    line-height: 150%;
+  }
+
+  .card-content-class {
+    font-size: 150%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 2%;
+  }
+
+  .card-lang-button {
+    font-size: 100%;
+  }
+
+  .seeProjectBtn {
+    width: 27%;
+    font-size: 120%;
+    margin-top: 7%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (width > 1200px) and (width <= 1400px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 80%;
+  }
+
+  .singleCardh1 {
+    font-size: 200%;
+  }
+
+  .canopy-class {
+    font-size: 90%;
+  }
+
+  .card-content-class {
+    font-size: 100%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 3%;
+  }
+
+  .card-lang-button {
+    font-size: 90%;
+  }
+
+  .seeProjectBtn {
+    width: 28%;
+    font-size: 110%;
+    margin-top: 10%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (width > 992px) and (width <= 1200px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
+
+  .singleCardh1 {
+    font-size: 200%;
+  }
+
+  .canopy-class {
+    font-size: 80%;
+    line-height: 100%;
+  }
+
+  .card-content-class {
+    font-size: 90%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 3%;
+  }
+
+  .card-lang-button {
+    font-size: 70%;
+  }
+
+  .seeProjectBtn {
+    width: 32%;
+    font-size: 100%;
+    margin-top: 8%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Desktop version started here */
+@media screen and (width > 768px) and (width <= 992px) {
+  .fullCardClass {
+    flex-direction: row;
+  }
+
+  .halfCardClass {
+    width: 50%;
+  }
+
+  .canopyDivClas {
+    width: 100%;
+  }
+
+  .mobile-section {
+    display: none;
+  }
+
+  .singleCardh1 {
+    font-size: 110%;
+  }
+
+  .canopy-class {
+    font-size: 80%;
+  }
+
+  .card-content-class {
+    font-size: 80%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .card-lang-div {
+    padding-top: 1%;
+  }
+
+  .card-lang-button {
+    font-size: 50%;
+  }
+
+  .seeProjectBtn {
+    width: 32%;
+    font-size: 75%;
+    margin-top: 5%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: row;
+  }
+
+  #divDescId2 {
+    display: flex;
+  }
+
+  #subDivLang-2 {
+    display: flex;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 70%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+
+  .dialogDiv2B {
+    margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Mobile version started here */
+@media (width > 576px) and (width <= 768px) {
+  .fullCardClass {
+    flex-direction: column;
+  }
+
+  .oldCardClass {
+    flex-direction: column;
+  }
+
+  .halfCardClass {
+    width: 100%;
+  }
+
+  .canopyDivClas {
+    width: 75%;
+    font-size: 130%;
+  }
+
+  .singleCardh1 {
+    font-size: 250%;
+  }
+
+  .canopy-class {
+    font-size: 80%;
+  }
+
+  .card-content-class {
+    font-size: 120%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  .card-lang-div {
+    padding-top: 2%;
+  }
+
+  .card-lang-button {
+    font-size: 90%;
+    text-transform: capitalize;
+  }
+
+  .seeProjectBtn {
+    width: 35%;
+    font-size: 120%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: column;
+  }
+
+  #divDescId2 {
+    display: none;
+  }
+
+  #subDivLang-2 {
+    display: none;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 100%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+}
+
+@media (width <= 576px) {
+  .fullCardClass {
+    flex-direction: column;
+  }
+
+  .oldCardClass {
+    flex-direction: column;
+  }
+
+  .halfCardClass {
+    width: 100%;
+  }
+
+  .canopyDivClas {
+    width: 95%;
+    font-size: 90%;
+  }
+
+  .singleCardh1 {
+    font-size: 180%;
+  }
+
+  .canopy-class {
+    font-size: 75%;
+  }
+
+  .card-content-class {
+    font-size: 90%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    width: 80%;
+  }
+
+  .card-lang-div {
+    padding-top: 2%;
+  }
+
+  .card-lang-button {
+    font-size: 60%;
+    text-transform: capitalize;
+  }
+
+  .seeProjectBtn {
+    width: 30%;
+    font-size: 80%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  @media (width <= 500px) {
+    .seeProjectBtn {
+      width: 40%;
+      font-size: 80%;
+      margin-top: 10%;
+      margin-bottom: 3%;
+    }
+  }
+
+  .dialogDiv1Class {
+    flex-direction: column;
+  }
+
+  .dialogDiv2Class {
+    flex-direction: column;
+  }
+
+  #divDescId2 {
+    display: none;
+  }
+
+  #subDivLang-2 {
+    display: none;
+  }
+
+  .popup-footer-btn-txt {
+    font-size: 100%;
+  }
+
+  .popup-footer-btn-img {
+    height: 60%;
+  }
+}
+
+:root {
+  --h1-color: #172b4d;
+  --h2-color: #6070ff;
+  --white-color: #fff;
+  --black-color: #000;
+  --html-color: #602;
+  --body-color: #760;
+  --color1-color: greenyellow;
+  --color2-color: #0ff;
+  --p-color: #344563;
+  --bg-color: #e5e5e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f9;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+
+.dynamic-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+}
+
+.seeProjectBtn button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.seeProjectBtn button:disabled {
+  color: #aaa;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+#button2 button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
