@@ -69,6 +69,10 @@
   .dialogDiv2B {
     margin-top: 4%;
   }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
 }
 
 @media (width > 1200px) and (width <= 1400px) {
@@ -138,6 +142,10 @@
 
   .dialogDiv2B {
     margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
   }
 }
 
@@ -209,6 +217,10 @@
 
   .dialogDiv2B {
     margin-top: 4%;
+  }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
   }
 }
 
@@ -285,11 +297,19 @@
   .dialogDiv2B {
     margin-top: 4%;
   }
+
+  .oldCardClass {
+    flex-direction: row-reverse;
+  }
 }
 
 /* Mobile version started here */
 @media (width > 576px) and (width <= 768px) {
   .fullCardClass {
+    flex-direction: column;
+  }
+
+  .oldCardClass {
     flex-direction: column;
   }
 
@@ -360,6 +380,10 @@
 
 @media (width <= 576px) {
   .fullCardClass {
+    flex-direction: column;
+  }
+
+  .oldCardClass {
     flex-direction: column;
   }
 

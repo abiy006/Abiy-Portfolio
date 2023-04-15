@@ -685,10 +685,16 @@ function cardBtn(btnParentDiv, proIdNo, passedImg, passedHeading, passedDesc1) {
 function dynamicCards(imgName, projName, projId, projDesc) {
   const singleCard = document.createElement('div');
   singleCard.setAttribute('id', 'individualCard');
-  singleCard.setAttribute('class', 'fullCardClass');
   singleCard.style.display = 'flex';
   singleCard.style.backgroundColor = 'white';
   singleCard.style.width = '75%';
+
+  if (projId % 2) {
+    // singleCard.style.flexDirection = 'row-reverse';
+    singleCard.setAttribute('class', 'fullCardClass');
+  } else {
+    singleCard.setAttribute('class', 'oldCardClass');
+  }
 
   singleCard.style.margin = '3rem';
   singleCard.style.padding = '1rem';
