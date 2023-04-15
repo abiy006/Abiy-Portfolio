@@ -42,6 +42,34 @@
         font-size: 120%;
         margin-top: 7%;
     }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: row;
+    }
+
+    #divDescId2 {
+        display: flex;
+    }
+
+    #subDivLang-2 {
+        display: flex;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 70%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
+    }
+
+    .dialogDiv2B {
+        margin-top: 4%;
+    }
 }
 
 @media ((width > 1200px) and (width <= 1400px)) {
@@ -86,6 +114,34 @@
         font-size: 110%;
         margin-top: 10%;
     }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: row;
+    }
+
+    #divDescId2 {
+        display: flex;
+    }
+
+    #subDivLang-2 {
+        display: flex;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 70%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
+    }
+
+    .dialogDiv2B {
+        margin-top: 4%;
+    }
 }
 
 @media ((width > 992px) and (width <= 1200px)) {
@@ -103,7 +159,7 @@
     }
 
     .singleCardh1 {
-        font-size: 250%;
+        font-size: 200%;
     }
 
     .canopy-class {
@@ -130,6 +186,34 @@
         font-size: 100%;
         margin-top: 8%;
     }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: row;
+    }
+
+    #divDescId2 {
+        display: flex;
+    }
+
+    #subDivLang-2 {
+        display: flex;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 70%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
+    }
+
+    .dialogDiv2B {
+        margin-top: 4%;
+    }
 }
 
 /* Desktop version started here */
@@ -152,22 +236,21 @@
   }
 
   .singleCardh1 {
-    font-size: 200%;
+    font-size: 180%;
   }
 
   .canopy-class {
-    font-size: 70%;
-    line-height: 70%;
+    font-size: 80%;
    }
 
    .card-content-class {
     font-size: 80%;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-bottom: 3%;
     }
 
     .card-lang-div {
-        padding-top: 3%;
+        padding-top: 1%;
     }
 
     .card-lang-button {
@@ -177,7 +260,35 @@
     .seeProjectBtn {
         width: 32%;
         font-size: 75%;
-        margin-top: 10%;
+        margin-top: 5%;
+    }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: row;
+    }
+
+    #divDescId2 {
+        display: flex;
+    }
+
+    #subDivLang-2 {
+        display: flex;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 70%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
+    }
+
+    .dialogDiv2B {
+        margin-top: 4%;
     }
 }
 
@@ -199,11 +310,11 @@
 
 
     .singleCardh1 {
-        font-size: 210%;
+        font-size: 250%;
     }
 
     .canopy-class {
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .card-content-class {
@@ -227,6 +338,30 @@
         font-size: 120%;
         margin-top: 7%;
         margin-bottom: 3%;
+    }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: column;
+    }
+
+    #divDescId2 {
+        display: none;
+    }
+
+    #subDivLang-2 {
+        display: none;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 100%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
     }
 }
 
@@ -275,6 +410,7 @@
         margin-top: 10%;
         margin-bottom: 3%;
     }
+
     @media (width <= 500px) {
         .seeProjectBtn {
             width: 40%;
@@ -283,6 +419,31 @@
             margin-bottom: 3%;
         }
     }
+
+    .dialogDiv1Class {
+        flex-direction: column;
+    }
+
+    .dialogDiv2Class {
+        flex-direction: column;
+    }
+
+    #divDescId2 {
+        display: none;
+    }
+
+    #subDivLang-2 {
+        display: none;
+    }
+
+    .popup-footer-btn-txt {
+        font-size: 100%;
+    }
+
+    .popup-footer-btn-img {
+        height: 60%;
+    }
+
 }
 
 :root {
@@ -328,7 +489,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #602;
+  background-color: #e5e5e5;
   width: 100%;
   height: auto;
 }

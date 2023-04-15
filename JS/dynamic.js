@@ -1,20 +1,32 @@
   const dynamicSection = document.getElementById('dynamic-id');
 
-  const modalId = document.getElementById('modal-id');
+  // const modalId = document.getElementById('modal-id');
   
-  modalId.style.justifyContent = 'center';
-  modalId.style.width = '100%';
-  modalId.style.height = '200vh';
-  modalId.style.background = '#fff';
-  modalId.style.borderRadius = '1rem';
-  modalId.style.marginLeft = '1.25rem';
-  modalId.style.marginRight = '1rem';
+  // modalId.style.justifyContent = 'center';
+  // modalId.style.width = '100%';
+  // modalId.style.height = '200vh';
+  // modalId.style.background = '#fff';
+  // modalId.style.borderRadius = '1rem';
+  // modalId.style.marginLeft = '1.25rem';
+  // modalId.style.marginRight = '1rem';
 
-  const headerDialog = document.getElementById('header-dialog-section');
-  headerDialog.style.width = '100%';
-  headerDialog.style.height = 'auto';
-  headerDialog.style.background = '#fff';
-  headerDialog.style.margin = '1rem';
+  // const headerDialog = document.getElementById('header-dialog-section');
+  // headerDialog.style.width = '100%';
+  // headerDialog.style.height = 'auto';
+  // headerDialog.style.background = '#fff';
+  // headerDialog.style.margin = '1rem';
+
+  // const dialogDiv1 = document.createElement('div');
+  // dialogDiv1.setAttribute('class', 'dialogDiv1Class');
+  // dialogDiv1.style.display = 'flex';
+  // dialogDiv1.style.flexDirection = 'column';
+  // const dialogDiv2 = document.createElement('div');
+  // dialogDiv2.setAttribute('class', 'dialogDiv2Class');
+  // dialogDiv2.style.display = 'flex';
+  // dialogDiv2.style.flexDirection = 'column';
+
+  // headerDialog.appendChild(dialogDiv1);
+  // headerDialog.appendChild(dialogDiv2);
 
 
   const projectsArray = [
@@ -320,20 +332,61 @@
 
     button.addEventListener('click', function(event) {
 
-        modalId.style.display = 'flex';
-        popupDialog();
-        popupHeader(headerDialog, passedHeading);
-        // popupCanopy();
-        cardCanopy(headerDialog);
-        popupImage(headerDialog, passedImg);
-        // cardImage(headerDialog, passedImg);
-        popupDescription(headerDialog, passedDesc1);
-        // cardDesc(headerDialog, passedDesc1);
-        // popupLanguages();
-        popupLanguages(headerDialog)
-        popupLine();
-        popupFooter();
-        popupLine2();
+      const modalId = document.getElementById('modal-id');
+  
+      modalId.style.justifyContent = 'center';
+      modalId.style.width = '100%';
+      modalId.style.height = '200vh';
+      modalId.style.background = '#fff';
+      modalId.style.borderRadius = '1rem';
+      modalId.style.marginLeft = '1.25rem';
+      modalId.style.marginRight = '1rem';
+      modalId.style.display = 'flex';
+
+        const headerDialog = document.getElementById('header-dialog-section');
+        headerDialog.style.width = '100%';
+        headerDialog.style.height = 'auto';
+        headerDialog.style.background = '#fff';
+        headerDialog.style.margin = '1rem';
+        headerDialog.style.display = 'flex';
+        headerDialog.style.flexDirection = 'column';
+
+        const dialogDiv1 = document.createElement('div');
+        dialogDiv1.setAttribute('class', 'dialogDiv1Class');
+        dialogDiv1.style.display = 'flex';
+
+        const dialogDiv2 = document.createElement('div');
+        dialogDiv2.setAttribute('class', 'dialogDiv2Class');
+        dialogDiv2.style.display = 'flex';
+          const dialogDiv2A = document.createElement('div');
+          dialogDiv2A.setAttribute('class', 'dialogDiv2A');
+          dialogDiv2A.style.display = 'flex';
+          dialogDiv2A.style.flexDirection = 'column';
+          dialogDiv2A.style.width = '75%';
+          dialogDiv2A.style.marginRight = '1rem';
+          dialogDiv2.appendChild(dialogDiv2A);
+          const dialogDiv2B = document.createElement('div');
+          dialogDiv2B.setAttribute('class', 'dialogDiv2B');
+          dialogDiv2B.style.display = 'flex';
+          dialogDiv2B.style.flexDirection = 'column';
+          dialogDiv2B.style.justifyContent = 'start';
+          // dialogDiv2B.style.marginTop = '4%';
+
+          dialogDiv2.appendChild(dialogDiv2B);
+
+popupHeader(dialogDiv1, passedHeading, modalId);
+popupCanopy(dialogDiv1);
+popupImage(dialogDiv1, passedImg);
+
+
+popupDescription(dialogDiv2A, passedDesc1);
+popupLanguages(dialogDiv2B);
+popupLine(dialogDiv2B);
+popupFooter(dialogDiv2B);
+popupLine2(dialogDiv2B);
+
+headerDialog.appendChild(dialogDiv1);
+headerDialog.appendChild(dialogDiv2);
     
         scroll(0,0)
         modalId.showModal();
@@ -371,80 +424,78 @@
 
   
   
-  function popupDialog() {
-    headerDialog.style.display = 'flex';
-    headerDialog.style.flexDirection = 'column';
-  }
-  
-  function popupHeader(comingDiv, proName) {
+  function popupHeader(comingDiv, proName, mainPopup) {
+
     const divHeader = document.createElement('div');
     divHeader.style.display = 'flex';
-    divHeader.style.justifyContent = 'space-between';
+    divHeader.style.marginTop = '1rem';
     divHeader.setAttribute('class', 'dialog-header-div');
-  
-    // const h1 = document.createElement('h1');
-    // h1.textContent = 'Tonic';
-    // h1.setAttribute('class', 'note');
-    // h1.style.color = 'red';
-    // h1.style.width = '100%';
-    // const divHeader = document.createElement('div');
-    // divHeader.setAttribute('id','divHdrId');
-    // divHeader.style.display = 'flex';
-    // divHeader.setAttribute('class', 'card-hdr-div');
-    // divHeader.style.color = '#fff';
-    // divHeader.style.width = '100%';
 
     const singleCardh1 = document.createElement('h1');
     singleCardh1.textContent = proName;
     singleCardh1.setAttribute('class', 'singleCardh1');
     singleCardh1.style.color = '#091e42';
-    singleCardh1.style.width = '100%';
+    singleCardh1.style.width = '90%';
     singleCardh1.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
     singleCardh1.style.fontStyle = 'normal';
     singleCardh1.style.fontWeight = '700';
 
-    // divHeader.appendChild(singleCardh1);
-
-    // headerParentDiv.appendChild(divHeader);
-
     divHeader.appendChild(singleCardh1);
   
-    // const div1 = document.createElement('div');
-    // div1.setAttribute('class', 'header-dialog-close2');
-    // div1.style.color = 'red';
-    // div1.style.width = '7%';
+    const divClose = document.createElement('div');
+    divClose.setAttribute('id','dialogCloseDiv');
+    divClose.style.width = '7%';
+
   
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    
     svg.setAttribute('fill', 'none');
     svg.setAttribute('viewBox', '0 0 24 24');
     svg.setAttribute('stroke-width', '1.5');
     svg.setAttribute('stroke', 'currentColor');
     svg.setAttribute('class', 'w-6 h-6');
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    
     path.setAttribute('stroke-linecap', 'round');
     path.setAttribute('stroke-linejoin', 'round');
     path.setAttribute('d', 'M6 18L18 6M6 6l12 12');
     svg.appendChild(path);
-    divHeader.appendChild(svg);
-    // divHeader.appendChild(div1);
+
+    divClose.appendChild(svg);
+
+    divClose.addEventListener("click", () => {
+      mainPopup.style.display = 'none';
+      mainPopup.close();
+    });
+
+    divHeader.appendChild(divClose);
+
   
     comingDiv.appendChild(divHeader);
   }
   
-  function popupCanopy() {
+
+  function popupCanopy(popupCanopy) {
+
     const div1 = document.createElement('div');
-    div1.setAttribute('class', 'div-canopy');
-    div1.style.display = 'flex'
+    div1.style.display = 'flex';
+    div1.setAttribute('id','canopyDivId');
+    div1.setAttribute('class', 'canopyDivClas');
     div1.style.color = 'orange';
-    div1.style.width = '80%';
-    div1.style.gap = '1rem';
+    div1.style.gap = '0.5rem';
     div1.style.alignItems = 'center';
+    div1.style.paddingTop = '1.5rem';
+    div1.style.paddingBottom = '1rem';
+    div1.style.fontSize = '100%';
   
     const h2First = document.createElement('p');
     h2First.textContent = 'CANOPY';
-    h2First.setAttribute('class', 'note');
-    h2First.style.color = 'blue';
-  
+    h2First.setAttribute('class', 'canopy-class');
+    h2First.style.color = '#344563';
+    h2First.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    h2First.style.fontStyle = 'normal';
+    h2First.style.fontWeight = '600';
+
     div1.appendChild(h2First);
   
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -462,9 +513,13 @@
   
     const h2Second = document.createElement('p');
     h2Second.textContent = 'Back End Dev';
-    h2Second.setAttribute('class', 'note');
+    h2Second.setAttribute('class', 'canopy-class');
     h2Second.style.color = 'blue';
-  
+    h2Second.style.color = '#6b778c';
+    h2Second.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    h2Second.style.fontStyle = 'normal';
+    h2Second.style.fontWeight = '600';
+
     div1.appendChild(h2Second);
   
     const svg2 = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -478,9 +533,22 @@
     circle2.setAttribute('r', '4');
     circle2.setAttribute('fill', '#C1C7D0');
     svg2.appendChild(circle2);
+
     div1.appendChild(svg2);
-  
-    headerDialog.appendChild(div1);
+
+    const h3Second = document.createElement('p');
+    h3Second.textContent = '2015';
+    h3Second.setAttribute('class', 'canopy-class');
+    h3Second.style.color = 'blue';
+    h3Second.style.color = '#6b778c';
+    h3Second.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    h3Second.style.fontStyle = 'normal';
+    h3Second.style.fontWeight = '600';
+
+    div1.appendChild(h3Second);
+
+    popupCanopy.appendChild(div1);
+
   }
   
   function popupImage(var1ImgDiv, var2ImgPath) {
@@ -494,7 +562,7 @@
     cardImage.style.backgroundPosition = 'center';
     cardImage.style.backgroundColor = '#fff';
     cardImage.style.width = '100%';
-    cardImage.style.maxHeight = '13.75rem';
+    // cardImage.style.maxHeight = '13.75rem';
 
     var1ImgDiv.appendChild(cardImage);
   
@@ -503,10 +571,17 @@
   function popupDescription(varDiv, varTxt) {
 
     const divDescription = document.createElement('div');
-    divDescription.setAttribute('id','divDescId');
+    divDescription.setAttribute('id','totalDivDescId');
     divDescription.style.display = 'flex';
+    divDescription.style.flexDirection = 'column';
     divDescription.setAttribute('class', 'card-desc-div');
     divDescription.style.width = '100%';
+
+    const subDivDesc1 = document.createElement('div');
+    subDivDesc1.setAttribute('id','divDescId1');
+    subDivDesc1.style.display = 'flex';
+    subDivDesc1.setAttribute('class', 'card-desc-div');
+    subDivDesc1.style.width = '100%';
   
     const pDesc = document.createElement('p');
     pDesc.textContent = varTxt;
@@ -517,7 +592,27 @@
     pDesc.style.fontWeight = '400';
     pDesc.style.width = '100%';
 
-    divDescription.appendChild(pDesc);
+    subDivDesc1.appendChild(pDesc);
+    divDescription.appendChild(subDivDesc1);
+
+
+    const subDivDesc2 = document.createElement('div');
+    subDivDesc2.setAttribute('id','divDescId2');
+    // subDivDesc2.style.display = 'flex';
+    subDivDesc2.setAttribute('class', 'card-desc-div');
+    subDivDesc2.style.width = '100%';
+  
+    const pDesc2 = document.createElement('p');
+    pDesc2.textContent = varTxt;
+    pDesc2.setAttribute('class', 'card-content-class');
+    pDesc2.style.color = '#344563';
+    pDesc2.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+    pDesc2.style.fontStyle = 'normal';
+    pDesc2.style.fontWeight = '400';
+    pDesc2.style.width = '100%';
+
+    subDivDesc2.appendChild(pDesc2);
+    divDescription.appendChild(subDivDesc2);
   
     varDiv.appendChild(divDescription);
   }
@@ -527,11 +622,19 @@
     const divLang = document.createElement('div');
     divLang.setAttribute('id','divLangId');
     divLang.style.display = 'flex';
+    divLang.style.flexDirection = 'column';
     divLang.style.alignItems = 'center';
     divLang.setAttribute('class', 'card-lang-div');
     divLang.style.width = '100%';
-    divLang.style.gap = '1rem';
-    // divLang.style.margin = '1rem';
+    divLang.style.gap = '0.5rem';
+
+    const subDivLang1 = document.createElement('div');
+    subDivLang1.setAttribute('id','subDivLang-2');
+    subDivLang1.style.display = 'flex';
+    subDivLang1.style.alignItems = 'center';
+    subDivLang1.setAttribute('class', 'card-lang-div');
+    subDivLang1.style.width = '100%';
+    subDivLang1.style.gap = '1rem';
   
     for (let i = 1; i <= 3; i++) {
       const button = document.createElement('input');
@@ -558,17 +661,54 @@
       } else if (i == 3) {
         button.value = 'javaScript';
       }
-      divLang.appendChild(button);
+      subDivLang1.appendChild(button);
+    }
+
+    const subDivLang2 = document.createElement('div');
+    subDivLang2.setAttribute('id','subDivLang-2');
+    // subDivLang2.style.display = 'flex';
+    subDivLang2.style.alignItems = 'center';
+    subDivLang2.setAttribute('class', 'card-lang-div');
+    subDivLang2.style.width = '100%';
+    subDivLang2.style.gap = '1rem';
+
+      for (let i = 1; i <= 2; i++) {
+        const button = document.createElement('input');
+        button.setAttribute('class', 'card-lang-button');
+        button.setAttribute('id', 'card-lang-button-2');
+        button.type  = 'button';
+        button.style.color = '#6070ff';
+        button.style.padding = '2px 8px';
+        button.style.backgroundColor = '#ebebff';
+        button.style.border = '1px solid #ebebff'
+        button.style.borderRadius = '0.5rem';
+        button.setAttribute('id','button' + i);
+        button.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
+        button.style.fontStyle = 'normal';
+        button.style.fontSize = '80%';
+        button.style.fontWeight = '500';
+        button.style.alignItems = 'center';
+        button.style.letterSpacing = '0.03em';
+        button.style.margin = '1px';
+  
+        if (i == 1) {
+          button.value = 'Ruby';
+        } else if (i == 2) {
+          button.value = 'Bootstrap';
+        }
+        subDivLang2.appendChild(button);
     }
   
+    divLang.appendChild(subDivLang1);
+    divLang.appendChild(subDivLang2);
     varDiv.appendChild(divLang);
   }
   
-  function popupLine() {
+  function popupLine(parentLineDiv) {
 
     const divLine = document.createElement('div');
     divLine.style.display = 'flex';
-    divLine.setAttribute('class', 'dialog-desc-div');
+    divLine.setAttribute('class', 'dialog-line-div');
     divLine.style.width = '100%';
   
     const lineHr = document.createElement('hr');
@@ -578,10 +718,10 @@
     
     divLine.appendChild(lineHr);
   
-    headerDialog.appendChild(divLine);
+    parentLineDiv.appendChild(divLine);
   }
 
-  function popupLine2() {
+  function popupLine2(parentLine2Div) {
 
     const divLine = document.createElement('div');
     divLine.style.display = 'flex';
@@ -589,18 +729,18 @@
     divLine.style.width = '100%';
     divLine.style.color = '#fff';
   
-    const lineHr = document.createElement('hr');
+    const lineHr = document.createElement('p');
     lineHr.style.width = '100%';
     lineHr.style.marginBottom = '-0.5rem';
-    lineHr.style.marginTop = '1rem';
+    lineHr.style.marginTop = '2rem';
     lineHr.style.color = '#fff';
     
     divLine.appendChild(lineHr);
   
-    headerDialog.appendChild(divLine);
+    parentLine2Div.appendChild(divLine);
   }
   
-  function popupFooter() {
+  function popupFooter(parentFooterDiv) {
 
     const divFooter = document.createElement('div');
     divFooter.style.display = 'flex';
@@ -616,11 +756,14 @@
   
       const buttonFoot = document.createElement('div');
       buttonFoot.style.display = 'flex';
+      buttonFoot.style.justifyContent = 'space-between';
       buttonFoot.style.width = '50%';
       buttonFoot.style.height = '3rem';
       buttonFoot.style.border = '1px solid #6070ff'
       buttonFoot.style.borderRadius = '0.5em';
       buttonFoot.style.padding = '0.5em';
+      buttonFoot.style.paddingLeft = '1em';
+      buttonFoot.style.paddingRight = '1em';
       buttonFoot.style.fontFamily = 'Poppins, sans-serif, Courier, monospace';
       buttonFoot.style.fontStyle = 'normal';
       buttonFoot.style.fontWeight = '500';
@@ -630,21 +773,22 @@
       buttonFoot.style.color = '#396df2';
       buttonFoot.style.gap = '0.5rem';
       buttonFoot.style.backgroundColor = '#fff';
-      // button.value = 'button' + i;
+
       if (i == 1) {
   
         const foot1Text = document.createElement('p');
         foot1Text.textContent = "See live";
         foot1Text.style.backgroundColor = '#fff';
+        foot1Text.setAttribute('class', 'popup-footer-btn-txt');
 
         buttonFoot.appendChild(foot1Text);
   
         const foot1Img = document.createElement('img');
-        foot1Img.style.backgroundImage = "url('../Images/See-live.svg')";
+        foot1Img.setAttribute('class', 'popup-footer-btn-img');
+        foot1Img.style.backgroundImage = "url('../Images/See-live2.png')";
         foot1Img.style.backgroundRepeat = 'no-repeat';
         foot1Img.style.backgroundSize = 'contain';
         foot1Img.style.width = '1.5rem';
-        foot1Img.style.height = '1.5rem';
 
         buttonFoot.appendChild(foot1Img);
   
@@ -653,16 +797,17 @@
         const foot1Text = document.createElement('p');
         foot1Text.textContent = "See source";
         foot1Text.style.backgroundColor = '#fff';
+        foot1Text.setAttribute('class', 'popup-footer-btn-txt');
 
         buttonFoot.appendChild(foot1Text);
   
         const foot1Img = document.createElement('img');
+        foot1Img.setAttribute('class', 'popup-footer-btn-img');
         foot1Img.style.backgroundColor = '#fff';
         foot1Img.style.backgroundImage = "url('../Images/Git-Icon.svg')";
         foot1Img.style.backgroundRepeat = 'no-repeat';
         foot1Img.style.backgroundSize = 'contain';
         foot1Img.style.width = '1.5rem';
-        foot1Img.style.height = '1.5rem';
 
         buttonFoot.appendChild(foot1Img);
   
@@ -670,7 +815,8 @@
       divFooter.appendChild(buttonFoot);
     }
   
-    headerDialog.appendChild(divFooter);
+    parentFooterDiv.appendChild(divFooter);
   }
   
+
 

@@ -952,6 +952,11 @@ section.desktop_ams .about_part2 ul li ul li {
 }
 
 .dialog-header-div svg {
-  width: 7%;
-  color: #000;
+  width: 100%;
+  color: #67798E;
+}
+
+#dialogCloseDiv {
+  display: flex;
+  justify-content: end;
 }

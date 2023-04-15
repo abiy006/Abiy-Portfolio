@@ -14,7 +14,6 @@ const headerId = document.getElementById('mobileHeader');
 mobileMenu.style.display = 'none';
 
 function openMobilemenu() {
-  // cardSectionId.style.display = 'none';
   aMS.style.display = 'none';
   contactMeMobile.style.display = 'none';
 
@@ -29,7 +28,6 @@ function openMobilemenu() {
 function mobileMenuclose() {
   mobileMenu.style.display = 'none';
 
-  // cardSectionId.style.display = 'block';
   aMS.style.display = 'block';
   contactMeMobile.style.display = 'block';
 
