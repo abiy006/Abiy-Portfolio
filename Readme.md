@@ -97,7 +97,7 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://abiy006.github.io/Abiy-Portfolio/)
+- [Live Demo Link](https://abiy006.github.io.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
