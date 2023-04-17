@@ -679,7 +679,7 @@ function cardBtn(btnParentDiv, proIdNo) {
 
     // modalId.style.marginRight = '5rem';
     modalId.style.margin = '2rem';
-    modalId.style.marginLeft = '5rem';
+    modalId.style.marginLeft = '3rem';
     modalId.scrollTop = '0';
 
     // const headerDialog = document.getElementById('header-dialog-section');
