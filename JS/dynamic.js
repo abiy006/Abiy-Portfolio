@@ -218,6 +218,7 @@ function popupHeader(comingDiv, proName, mainPopup) {
   // divHeader.style.marginTop = '1rem';
   divHeader.setAttribute('class', 'dialog-header-div');
   divHeader.style.height = '15%';
+  divHeader.style.marginBottom = '2rem';
 
   const singleCardh1 = document.createElement('h1');
   singleCardh1.textContent = proName;
@@ -571,7 +572,7 @@ function popupFooter(parentFooterDiv) {
 
       const foot1Img = document.createElement('img');
       foot1Img.setAttribute('class', 'popup-footer-btn-img');
-      foot1Img.style.backgroundImage = "url('./Images/See-live2.png')";
+      foot1Img.style.backgroundImage = "url('./Images/See-live.svg')";
       foot1Img.style.backgroundRepeat = 'no-repeat';
       foot1Img.style.backgroundSize = 'contain';
       foot1Img.style.width = '1.5rem';
