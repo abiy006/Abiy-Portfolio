@@ -111,11 +111,12 @@
          <h2>Contact me</h2>
          <p>If you have an application you are intersted in developing, a feature that you need built or a project that
             needs coding. I'd love to help with it</p>
-         <form action="https://formspree.io/f/mbjezjkw" method="post">
+         <form id="contactMeMob" action="https://formspree.io/f/mbjezjkw" method="post">
             <input name="name" id="name" type="name" placeholder="Alexandra Loremipsum" maxlength="30" required>
             <input name="email" id="email" type="email" placeholder="alexandra@gmail.com" required>
             <textarea name="textarea" id="" textarea cols="30" rows="10" placeholder="Write your message here"
                maxlength="500" required></textarea>
+               <p id="response-mob"></p>
             <button type="submit">Get in touch</button>
          </form>
          <hr>
@@ -159,11 +160,12 @@
             <h2>Contact me</h2>
             <p>If you have an application you are intersted in developing, a feature that you need built or a project
                that needs coding. I'd love to help with it!</p>
-            <form action="https://formspree.io/f/mbjezjkw" method="post">
+            <form id="contactMeDesk" action="https://formspree.io/f/mbjezjkw" method="post">
                <input name="name" id="name" type="name" placeholder="Alexandra Loremipsum" maxlength="30" required>
                <input name="email" id="email" type="email" placeholder="alexandra@gmail.com" required>
                <textarea name="textarea" id="" textarea cols="30" rows="10" placeholder="Write your message here"
                   maxlength="500" required></textarea>
+               <p id="response-desk"></p>
                <div class="see-project-btn"><button>Get in touch</button></div>
             </form>
          </div>
@@ -198,8 +200,9 @@
    <Section id="header-dialog-section" class="header-dialog-class"></Section>
    </dialog>
 
-   <script type="module" src="/JS/dynamic.js"></script>
-   <script type="module" src="/JS/menu.js"></script>
+   <script type="application/javascript" src="./JS/validatecontact.js"></script>
+   <script type="application/javascript" src="./JS/dynamic.js"></script>
+   <script type="application/javascript" src="./JS/menu.js"></script>
    
 </body>
 </html>
