@@ -761,7 +761,7 @@ function dynamicCards(imgName, projName, projId) {
   singleCard.setAttribute('id', 'individualCard');
   singleCard.style.display = 'flex';
   singleCard.style.backgroundColor = 'white';
-  singleCard.style.width = '75%';
+  singleCard.style.width = '90%';
 
   if (projId % 2) {
     singleCard.setAttribute('class', 'fullCardClass');
