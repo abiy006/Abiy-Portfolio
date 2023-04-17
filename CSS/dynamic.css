@@ -464,7 +464,7 @@
 :root {
   --h1-color: #172b4d;
   --h2-color: #6070ff;
-  --white-color: #fff;
+  --white-color: #760;
   --black-color: #000;
   --html-color: #602;
   --body-color: #760;
@@ -511,17 +511,17 @@ body {
 
 .seeProjectBtn button:active {
   background-color: #2230d2;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .seeProjectBtn button:disabled {
   color: #aaa;
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid #aaa;
   border-radius: 8px;
 }
 
 #button2 button:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: var(--white-color);
 }

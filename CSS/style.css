@@ -254,7 +254,7 @@ section.desktop_ams .about_part2 ul li ul {
   display: flex;
   justify-content: center;
   align-self: center;
-  color: #fff;
+  color: var(--white-color);
   width: 40%;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   font-style: normal;
@@ -273,8 +273,8 @@ section.ams {
   height: 1100px;
   text-align: center;
   color: white;
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
   border-top-right-radius: 80px;
   margin-top: 20px;
   margin-bottom: 5rem;
@@ -294,7 +294,7 @@ section.ams {
 .contact_me_desktop h2 {
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--white-color);
   width: 100%;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   font-style: normal;
@@ -405,7 +405,7 @@ section.ams p {
 
 .mobile-menu-page-class ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
   font-size: 2rem;
   font-family: 'Poppins', sans-serif, Courier, monospace;
   font-style: normal;
@@ -459,7 +459,7 @@ section.contact_me_mobile > h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #fff;
+  color: var(--white-color);
   margin-top: 8.5rem;
   margin-left: 4rem;
 }
@@ -472,7 +472,7 @@ section.contact_me_mobile > p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -498,7 +498,7 @@ section.contact_me_mobile form {
 }
 
 .contact_me_desktop form input {
-  background: #fff;
+  background: var(--white-color);
   border: 1px solid #cfd8dc;
   cursor: pointer;
   width: 447px;
@@ -513,7 +513,7 @@ section.contact_me_mobile form {
 }
 
 section.contact_me_mobile > form > input {
-  background: #fff;
+  background: var(--white-color);
   border: 1px solid #cfd8dc;
   cursor: pointer;
   border-radius: 8px;
@@ -540,7 +540,7 @@ section.contact_me_mobile > form > input::placeholder {
 }
 
 textarea {
-  background: #fff;
+  background: var(--white-color);
   border: 1px solid #cfd8dc;
   font-size: 15px;
   padding-top: 10px;
@@ -579,7 +579,7 @@ section.contact_me_mobile > hr {
   list-style: none;
   padding-left: 8rem;
   padding-right: 8rem;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 #desktopHeader ul {
@@ -693,7 +693,7 @@ section.contact_me_mobile > hr {
   /* display: flex; */
   width: 100%;
   border: 1px solid #dfe1e6;
-  background-color: #fff;
+  background-color: var(--white-color);
   padding-top: 5rem;
   padding-bottom: 10rem;
   padding-left: 5rem;
@@ -772,7 +772,7 @@ section.desktop_ams .about_part2 ul li ul li {
 }
 
 .contact_me_desktop form textarea {
-  background: #fff;
+  background: var(--white-color);
   border: 1px solid #cfd8dc;
   font-size: 15px;
   padding-top: 10px;
@@ -815,15 +815,15 @@ section.desktop_ams .about_part2 ul li ul li {
   width: 327px;
   height: 72px;
   padding-right: 3rem;
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
   border-bottom: 1.5px solid #dfe1e6;
 }
 
 .see-project-btn > button,
 .contact_me_mobile button {
   display: flex;
-  background-color: #fff;
+  background-color: var(--white-color);
   color: #396df2;
   font-size: 17px;
   font-family: 'Poppins', sans-serif, Courier, monospace;
@@ -856,7 +856,7 @@ section.desktop_ams .about_part2 ul li ul li {
 
 .ams > .mobile-about-myself > button {
   display: flex;
-  background-color: #fff;
+  background-color: var(--white-color);
   color: #396df2;
   font-size: 17px;
   font-family: 'Poppins', sans-serif, Courier, monospace;
@@ -878,36 +878,36 @@ section.desktop_ams .about_part2 ul li ul li {
 .see-project-btn button:hover,
 .contact_me_mobile button:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .see-project-btn button:active,
 .contact_me_mobile button:active {
   background-color: #2230d2;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .see-project-btn button:disabled,
 .contact_me_mobile button:disabled {
   color: #aaa;
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid #aaa;
   border-radius: 8px;
 }
 
 .lang-btn button:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .lang-btn button:active {
   background-color: blue;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .lang-btn button:disabled {
   color: #aaa;
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid #aaa;
   border-radius: 8px;
 }
@@ -918,17 +918,17 @@ section.desktop_ams .about_part2 ul li ul li {
 
 .ams > .mobile-about-myself > button:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .ams > .mobile-about-myself > button:active {
   background-color: #2230d2;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .ams > .mobile-about-myself > button:disabled {
   color: #aaa;
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid #aaa;
   border-radius: 8px;
 }
@@ -949,7 +949,7 @@ section.desktop_ams .about_part2 ul li ul li {
   width: 7%;
   margin-top: 3rem;
   margin-left: 80%;
-  color: #fff;
+  color: var(--white-color);
 }
 
 #modal-id {
