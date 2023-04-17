@@ -46,7 +46,7 @@ function cardImage(imageParentDiv, imagePath) {
   const cardImage = document.createElement('img');
   cardImage.setAttribute('class', 'cardImageClass');
   // cardImage.src = '../Images/Tonic1-pic.svg';
-  cardImage.src = `../Images/${imagePath}`;
+  cardImage.src = `./Images/${imagePath}`;
   cardImage.style.backgroundRepeat = 'no-repeat';
   cardImage.style.backgroundSize = 'contain';
   cardImage.style.backgroundPosition = 'center';
@@ -350,7 +350,7 @@ function popupImage(var1ImgDiv, var2ImgPath) {
   const cardImage = document.createElement('img');
   cardImage.setAttribute('class', 'cardImageClass');
   // cardImage.src = '../Images/Tonic1-pic.svg';
-  cardImage.src = `../Images/${var2ImgPath}`;
+  cardImage.src = `./Images/${var2ImgPath}`;
   cardImage.style.backgroundRepeat = 'no-repeat';
   cardImage.style.backgroundSize = 'cover';
   cardImage.style.backgroundPosition = 'center';
@@ -571,7 +571,7 @@ function popupFooter(parentFooterDiv) {
 
       const foot1Img = document.createElement('img');
       foot1Img.setAttribute('class', 'popup-footer-btn-img');
-      foot1Img.style.backgroundImage = "url('../Images/See-live2.png')";
+      foot1Img.style.backgroundImage = "url('./Images/See-live2.png')";
       foot1Img.style.backgroundRepeat = 'no-repeat';
       foot1Img.style.backgroundSize = 'contain';
       foot1Img.style.width = '1.5rem';
@@ -588,7 +588,7 @@ function popupFooter(parentFooterDiv) {
       const foot1Img = document.createElement('img');
       foot1Img.setAttribute('class', 'popup-footer-btn-img');
       foot1Img.style.backgroundColor = '#fff';
-      foot1Img.style.backgroundImage = "url('../Images/Git-Icon.svg')";
+      foot1Img.style.backgroundImage = "url('./Images/Git-Icon.svg')";
       foot1Img.style.backgroundRepeat = 'no-repeat';
       foot1Img.style.backgroundSize = 'contain';
       foot1Img.style.width = '1.5rem';
