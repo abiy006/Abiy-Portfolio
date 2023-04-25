@@ -71,9 +71,9 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
 
 👤 **Abiy Hussen**
 
-- GitHub: [@githubhandle](https://github.com/abiy006)
-- Twitter: [@twitterhandle](https://twitter.com/Abiy62463489)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abiy-hussen-aman-194587183/)
+- GitHub: [@Abiy Github](https://github.com/abiy006)
+- Twitter: [@Abiy Twitter](https://twitter.com/Abiy62463489)
+- LinkedIn: [@Abiy LinkedIn](https://www.linkedin.com/in/abiy-hussen-aman-194587183/)
 
 👤 **José Alejandro Fernández Caminero**
 
