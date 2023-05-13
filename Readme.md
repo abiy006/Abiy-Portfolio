@@ -68,7 +68,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-[Setup link](https://github.com/abiy006/Abiy-Portfolio.git)
+[https://github.com/abiy006/Abiy-Portfolio.git](https://github.com/abiy006/Abiy-Portfolio.git)
 
 ### Install
 
@@ -76,7 +76,7 @@ Clone this repository to your desired folder:
 
 Clone this repository to your desired folder:
 
-[Install link](https://github.com/abiy006/Abiy-Portfolio.git)
+[https://github.com/abiy006/Abiy-Portfolio.git](https://github.com/abiy006/Abiy-Portfolio.git)
 
 ### Usage
 
