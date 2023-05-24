@@ -48,22 +48,57 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
   <summary>Technologies</summary>
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Technologies</summary>
-  <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Technologies</summary>
-  <ul>
+    <li><a href="https://dart.dev/tools/javascript">Javascript</a></li>
     <li><a href="https://dart.dev/tools/linter-rules">LINTERS</a></li>
   </ul>
 </details>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+* Only clone the repo and run in your local
+
+### Setup
+
+Clone this repository to your desired folder:
+
+[https://github.com/abiy006/Abiy-Portfolio.git](https://github.com/abiy006/Abiy-Portfolio.git)
+
+### Install
+
+<!-- Install this project with: -->
+
+Clone this repository to your desired folder:
+
+[https://github.com/abiy006/Abiy-Portfolio.git](https://github.com/abiy006/Abiy-Portfolio.git)
+
+### Usage
+
+To run the project, execute the following command:
+
+git clone https://github.com/abiy006/Abiy-Portfolio.git
+
+### Run tests
+
+To run tests, run the following command:
+
+No implemented yet.
+
+### Deployment
+
+You can deploy this project using:
+
+GH Pages, publish the branch in git Hub pages
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
@@ -101,39 +136,13 @@ The protofolio is able to function (responsive to) both on the mobile and deskto
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-* To clone the repository
-* Double click the index.html file and open in your favourite browser
-
-### Prerequisites
-
-In order to run this project you need:
-
-* To clone the repository
-* A browser
-
-### Setup
-
-Clone this repository to your desired folder:
-
-```
-  git clone git@github.com:abiy006/Abiy-Portfolio.git
-```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[linter_implementation_with_javascript]**
-- [ ] **[linter_implementation_with_html_css_javascript]**
-- [ ] **[linter_implementation_with_ruby]**
-- GitHub: [@githubhandle](https://github.com/fdezcaminero/)
+- [ ] **[Server side language will be used]**
+- [ ] **[Data from server will be available]**
+- [ ] **[Dynamic page features will be implemented]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
